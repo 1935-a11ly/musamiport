@@ -1050,7 +1050,7 @@ frameborder="0"
         <img
                     src= './instagram.png'
                     alt= "Image Description"
-                    className='w-[29px] h-[29px]'
+                    className='w-[29px] h-[29px] mt-[-0.15rem]'
         />
     </a>
 
