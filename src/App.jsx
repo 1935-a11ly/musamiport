@@ -240,7 +240,7 @@ function App() {
 </span></div>
     </div>
 
-<div className='md:text-[#303030] animate-fade xs:pb-10 sm:pb-10 md:pb-17 pt-4 sm:text-white xs:text-white xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
+<div className='text-[#303030] animate-fade xs:pb-10 sm:pb-10 md:pb-17 pt-4 xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
 
 <div className='pb-8 px-0 text-xl md:flex md:justify-center space-x-4'>
 <button class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full inline-flex flex-shrink-0 items-center bg-opacity-40">
