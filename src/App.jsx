@@ -946,7 +946,7 @@ function App() {
 <div className=' waver bgsec3 pb-52'>
 <div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32'>Get In Touch</h1></div>
 <div class="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
-  <div class="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[365px] pb-30 formatter1">
+  <div class="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[370px] pb-30 formatter1">
     <div className="avatar online">
           <div className="w-24 rounded-full">
             <img src="./avatar.jpg" />
