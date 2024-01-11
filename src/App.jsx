@@ -827,7 +827,7 @@ function App() {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(0,153,0)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(0,153,0)' }}
     date="August 2023 - Current"
     iconStyle={{ background: 'rgb(0,153,0)', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -843,6 +843,7 @@ function App() {
     date="September 2021 - June 2023"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#3c74a8' }}
     contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Website Developer</h3>
@@ -856,7 +857,8 @@ function App() {
     date="January 2022 - November 2022"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
     contentStyle={{ background: 'rgb(253,134,14)', color: '#fff' }}
-    icon={<img src={'./dc.jpeg'} alt="myLogo" className='mt-[6px] ml-[6px] w-12 h-12 '/>} 
+    contentArrowStyle={{ borderRight: '7px solid rgb(253,134,14)' }}
+    icon={<img src={'./dc.jpeg'} alt="myLogo" className='scale-[70%]'/>} 
   >
     <h3 className="vertical-timeline-element-title">Intranet Administrator | Website Developer</h3>
     <h4 className="vertical-timeline-element-subtitle">Rochester, MN</h4>
@@ -873,6 +875,7 @@ function App() {
     date="May 2022 - October 2022"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
     contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Marketing Staff</h3>
@@ -893,6 +896,7 @@ function App() {
     date="September 2021"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
     contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Resident Assistant</h3>
@@ -909,6 +913,7 @@ function App() {
     date="September 2021"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
     contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Career Peer Advisor</h3>
@@ -925,6 +930,7 @@ function App() {
     date="2002 - 2006"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
     contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Bachelor of Arts in Computer and Data Science</h3>
@@ -940,7 +946,7 @@ function App() {
 <div className=' waver bgsec3 pb-52'>
 <div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32'>Get In Touch</h1></div>
 <div class="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
-  <div class="w-full bg-gray-800 lg:rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 max-w-[950px] min-w-[350px] pb-30 formatter1">
+  <div class="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[350px] pb-30 formatter1">
     <div className="avatar online">
           <div className="w-24 rounded-full">
             <img src="./avatar.jpg" />
@@ -1025,12 +1031,12 @@ frameborder="0"
     <a href='#contact' className="link link-hover">Contact</a>
   </nav> 
   <nav>
-    <div className="grid grid-flow-col gap-4">
+    <div className="flex justify-center space-x-6">
     <a className='' href="https://github.com/1935-a11ly" target="_blank">
   <     img
             src= './github.png'
             alt= "Image Description"
-            className='fill-current w-6 h-6'
+            className='filter invert w-6 h-6'
         />
     </a>
     <a className='' href="https://www.linkedin.com/in/michaeltkmusa/" target="_blank">
@@ -1044,14 +1050,14 @@ frameborder="0"
         <img
                     src= './instagram.png'
                     alt= "Image Description"
-                    className='w-6 h-6'
+                    className='w-[29px] h-[29px]'
         />
     </a>
 
     </div>
   </nav> 
   <aside>
-    <p>Copyright © 2023 - Created and Maintained by Michael Musa</p>
+    <p>Copyright © 2023 | Michael Musa</p>
   </aside>
 </footer>
 
