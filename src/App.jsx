@@ -846,7 +846,7 @@ function App() {
     contentArrowStyle={{ borderRight: '7px solid  rgb(0,153,0)' }}
     date="August 2023 - Current"
     iconStyle={{ background: 'rgb(0,153,0)', color: '#fff' }}
-    // icon={<WorkIcon />}
+    icon={<img src={'./micodes.png'} className = "scale-[125%]" alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Freelance Software Developer</h3>
     <h4 className="vertical-timeline-element-subtitle">Houston, TX</h4>
@@ -902,44 +902,7 @@ function App() {
     <p>
       Utilized Figma for website migration planning and design outlook to visualize potential deficiencies as we shifted from Reason CMS to WordPress.
     </p>
-    <p>
-    Interviewed students for insight on research projects to be published by KIMT3 in Rochester, Minnesota
-    </p>
 
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="September 2021"
-    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
-    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
-    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
-  >
-    <h3 className="vertical-timeline-element-title">Resident Assistant</h3>
-    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
-    <p>
-      Cultivated positive communal living relationships in designated campus residence halls
-    </p>
-    <p>
-      Designed creative programs to facilitate social, cultural, and academic student development
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="September 2021"
-    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
-    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
-    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
-  >
-    <h3 className="vertical-timeline-element-title">Career Peer Advisor</h3>
-    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
-    <p>
-      Facilitate vocational resource acquisition for peers through resume co-development and design.
-    </p>
-    <p>
-      Tailor creative board designs aimed at improving student access to LinkedIn Learning.
-    </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
@@ -950,7 +913,6 @@ function App() {
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
     <h3 className="vertical-timeline-element-title">Bachelor of Arts in Computer and Data Science</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
     <p>
       Cum laude graduate majoring in Computer Science with a minor in Data Science
     </p>
@@ -970,7 +932,7 @@ function App() {
     </div>
     <h2 class="text-2xl font-bold text-gray-200 mb-4">Contact Michael</h2>
 
-    <form>
+    <form className='pb-[100px]'>
       <div class="flex flex-wrap formatter3">
       <input
         type="text"
@@ -1017,7 +979,7 @@ function App() {
       >
     </textarea>
     </div>
-    <button className="float-left bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 animate-pulse" type="button" onClick={()=>{startStopListening()}}> {isListening ? 'Conclude Dictation' : 'Dictate'}</button>
+    <button className="float-left py-2 mt-2 transition ease-in-out duration-150 " type="button" onClick={()=>{startStopListening()}}> {isListening ? <img src="micactive.png" className = "invert w-12 h-12 bg-[#06b6d4] rounded-full p-2" alt="ActiveMic" /> : <img src="micinactive.png" className = "invert w-12 h-12 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full p-2 " alt="InactiveMic" />}</button>
 
       <button
         type="submit"

@@ -2,9 +2,8 @@
 
 html{
   min-width: 350px;
-  --scroll-behavior: smooth!important;
-  scroll-behavior: smooth!important;
-  cursor: url("../minime.jpg");
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 body {
