@@ -5,6 +5,9 @@ import DOTS from 'vanta/src/vanta.dots'
 import RINGS from 'vanta/src/vanta.rings'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import useSpeechToText from './test.jsx';
+
+
 
 
 function App() {
@@ -120,7 +123,20 @@ function App() {
   const handleDateChange = (e) => {
     setDate(e.target.value);
   };
-  
+  const [textInput, setTextInput] = useState("");
+  const {isListening, transcript, startListening, stopListening} = useSpeechToText({continuous:true})
+
+  const stopVoiceInput = () => {
+    setTextInput(prevVal => prevVal + (transcript.length ? (prevVal.length ? ' ' : '') + transcript : '') )
+    stopListening()
+  }
+
+  const startStopListening = () => {
+    isListening ? stopVoiceInput(): startListening()
+  }
+
+
+
   return (
     <>
     {/* <div className='float-left text-xl font-sans'>Musa.</div> */}
@@ -927,7 +943,7 @@ function App() {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="2002 - 2006"
+    date="August 2019 - May 2023"
     iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
     contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
@@ -954,7 +970,8 @@ function App() {
     </div>
     <h2 class="text-2xl font-bold text-gray-200 mb-4">Contact Michael</h2>
 
-    <form class="flex flex-wrap formatter3">
+    <form>
+      <div class="flex flex-wrap formatter3">
       <input
         type="text"
         class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
@@ -993,11 +1010,18 @@ function App() {
         name="message"
         class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto w-full focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest h-52"
         placeholder="Type message or click mic to Dictate"
-      ></textarea>
+        disabled = {isListening}
+        value={isListening ? textInput + (transcript.length ? (textInput.length ? ' ' : '') + transcript : '') : textInput}
+        onChange = {(e) => {setTextInput(e.target.value)}}
+        type="textarea"
+      >
+    </textarea>
+    </div>
+    <button className="float-left bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 animate-pulse" type="button" onClick={()=>{startStopListening()}}> {isListening ? 'Conclude Dictation' : 'Dictate'}</button>
 
       <button
         type="submit"
-        class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+        class=" float-right bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
       >
         Send
       </button>
