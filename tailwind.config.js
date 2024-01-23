@@ -16,4 +16,15 @@ export default {
     require("tw-elements-react/dist/plugin.cjs"),
     require("daisyui"),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
+  }  
 }

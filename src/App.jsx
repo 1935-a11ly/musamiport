@@ -5,6 +5,9 @@ import DOTS from 'vanta/src/vanta.dots'
 import RINGS from 'vanta/src/vanta.rings'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import useSpeechToText from './test.jsx';
+
+
 
 
 function App() {
@@ -120,7 +123,20 @@ function App() {
   const handleDateChange = (e) => {
     setDate(e.target.value);
   };
-  
+  const [textInput, setTextInput] = useState("");
+  const {isListening, transcript, startListening, stopListening} = useSpeechToText({continuous:true})
+
+  const stopVoiceInput = () => {
+    setTextInput(prevVal => prevVal + (transcript.length ? (prevVal.length ? ' ' : '') + transcript : '') )
+    stopListening()
+  }
+
+  const startStopListening = () => {
+    isListening ? stopVoiceInput(): startListening()
+  }
+
+
+
   return (
     <>
     {/* <div className='float-left text-xl font-sans'>Musa.</div> */}
@@ -240,7 +256,7 @@ function App() {
 </span></div>
     </div>
 
-<div className='md:text-[#303030] animate-fade xs:pb-10 sm:pb-10 md:pb-17 pt-4 sm:text-white xs:text-white xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
+<div className='text-[#303030] animate-fade xs:pb-10 sm:pb-10 md:pb-17 pt-4 xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
 
 <div className='pb-8 px-0 text-xl md:flex md:justify-center space-x-4'>
 <button class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full inline-flex flex-shrink-0 items-center bg-opacity-40">
@@ -435,6 +451,7 @@ function App() {
         <circle r="12" cy="12" cx="12"></circle>
       </svg>
       <div className="input bg-opacity-20">https://michaelkmusa.com</div>
+      {/* possibly add the react typed there when doing animations */}
   </div>
   <div className="flex justify-center px-0 md:py-0 sm:py-0 xs:py-0 bg-base-200 bg-opacity-[10%] backdrop-blur-sm">
     
@@ -525,40 +542,39 @@ function App() {
         <circle r="12" cy="12" cx="12"></circle>
       </svg><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.75 mr-1.5 h-3 w-3 text-green-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg></div><span class="absolute inset-x-0 top-2 text-xs text-slate-500">ProgressBar.tsx</span>
+      </svg></div><span class="absolute inset-x-0 top-2 text-xs text-slate-500">LifeLine.tsx</span>
   </div>
   <div class="mt-5 space-y-1.5 px-5 pb-10">
     <p class="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
       <span class="text-slate-500">&lt;</span><span class="text-pink-400">Card</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">Ticket Sales</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">KIDLIN LAW</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Metric</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">$ 71,465</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Metric</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">if you write a problem down</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Flex</span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"mt-3"</span></span></span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Flex</span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"clearly-and-specifically"</span></span></span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="text-slate-500">&lt;</span><span class="text-pink-400">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">32%</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">of annual target</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="text-slate-500">&lt;</span><span class="text-pink-400">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">YOU</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">have solved</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">$ 223,328</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Metric</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">50%</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Metric</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
       <span class="text-slate-500">&lt;/</span><span class="text-pink-400">Flex</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">ProgressBar</span><span class="ml-2 text-violet-400">value<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">{ 32 }</span></span></span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"mt-3"</span></span></span><span class="text-slate-500">/&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">LifeLine</span><span class="ml-2 text-violet-400">value<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">{ 50 }</span></span></span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"of-it"</span></span></span><span class="text-slate-500">/&gt;</span>
     </p>
     <p class="font-mono text-xs font-normal tracking-wide text-violet-400">
       <span class="text-slate-500">&lt;/</span><span class="text-pink-400">Card</span><span class="text-slate-500">&gt;</span>
     </p>
   </div>
 </div>   
-</div> 
-
+</div>
 
 
 
@@ -743,8 +759,8 @@ function App() {
 
 
 
-<div className='codebar2'>
-<div class="relative rounded-lg bg-slate-900">
+<div className='codebar1'>
+    <div class="relative rounded-lg bg-slate-900">
   <div class="relative flex text-center">
     <div class="flex pl-3.5 pt-3"><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.5 mr-1.5 h-3 w-3 text-red-500/20">
         <circle r="12" cy="12" cx="12"></circle>
@@ -752,38 +768,38 @@ function App() {
         <circle r="12" cy="12" cx="12"></circle>
       </svg><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.75 mr-1.5 h-3 w-3 text-green-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg></div><span class="absolute inset-x-0 top-2 text-xs text-slate-500">ProgressBar.tsx</span>
+      </svg></div><span class="absolute inset-x-0 top-2 text-xs text-slate-500">WorkEthic.tsx</span>
   </div>
   <div class="mt-5 space-y-1.5 px-5 pb-10">
     <p class="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
       <span class="text-slate-500">&lt;</span><span class="text-pink-400">Card</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">Ticket Sales</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">GILBERT LAW</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Metric</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">$ 71,465</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Metric</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">if you take on a new task</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Flex</span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"mt-3"</span></span></span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Flex</span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"finding-the-best-way-to"</span></span></span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="text-slate-500">&lt;</span><span class="text-pink-400">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">32%</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">of annual target</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="text-slate-500">&lt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">ACHIEVE</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">$ 223,328</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">the desired result is</span></span><span class="text-slate-500">&lt;/</span><span class="text-pink-400">Text</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
       <span class="text-slate-500">&lt;/</span><span class="text-pink-400">Flex</span><span class="text-slate-500">&gt;</span>
     </p>
     <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-pink-400">ProgressBar</span><span class="ml-2 text-violet-400">value<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">{ 32 }</span></span></span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"mt-3"</span></span></span><span class="text-slate-500">/&gt;</span>
+      <span class="text-slate-500">&lt;</span><span class="text-pink-400">WorkEthic</span><span class="ml-2 text-violet-400">value<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">{ 50 }</span></span></span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"on-you"</span></span></span><span class="text-slate-500">/&gt;</span>
     </p>
     <p class="font-mono text-xs font-normal tracking-wide text-violet-400">
       <span class="text-slate-500">&lt;/</span><span class="text-pink-400">Card</span><span class="text-slate-500">&gt;</span>
     </p>
   </div>
-</div> 
+</div>   
 </div>
 
 
@@ -826,94 +842,119 @@ function App() {
 <VerticalTimeline className='pt-12'>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="2011 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(0,153,0)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(0,153,0)' }}
+    date="August 2023 - Current"
+    iconStyle={{ background: 'rgb(0,153,0)', color: '#fff' }}
     // icon={<WorkIcon />}
   >
-    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+    <h3 className="vertical-timeline-element-title">Freelance Software Developer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Houston, TX</h4>
     <p>
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+      Utilize Typescript, Django and REST API to create inventory and listing Web Applications for IDrive and Infiniti Auto Group LLC
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date="2010 - 2011"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
+    date="September 2021 - June 2023"
+    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#3c74a8' }}
+    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
+    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Art Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    <h3 className="vertical-timeline-element-title">Website Developer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
     <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+      Design, update and deploy Luther College`s website content using Reason CMS and WordPress with a goal to meet W3C standards for accessibility and performance.
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
+    date="January 2022 - November 2022"
+    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(253,134,14)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(253,134,14)' }}
+    icon={<img src={'./dc.jpeg'} alt="myLogo" className='scale-[70%]'/>} 
   >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+    <h3 className="vertical-timeline-element-title">Intranet Administrator | Website Developer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Rochester, MN</h4>
     <p>
-      User Experience, Visual Design
+    Administered SharePoint sites for successful collaboration with external contractors such as Mayo Clinic and Destination
+    Medical Center.
+    </p>
+    <p>
+    Designed and maintained static and full-stack Web Applications for Rochester community service initiatives such as Project Healings that aimed to reduce the COVID-19 vaccine disparity in the community.
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date="2006 - 2008"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
+    date="May 2022 - October 2022"
+    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
+    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    <h3 className="vertical-timeline-element-title">Marketing Staff</h3>
+    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
     <p>
-      User Experience, Visual Design
+      Developed and maintained website content using WordPress as a primary tool.
+    </p>
+    <p>
+      Utilized Figma for website migration planning and design outlook to visualize potential deficiencies as we shifted from Reason CMS to WordPress.
+    </p>
+    <p>
+    Interviewed students for insight on research projects to be published by KIMT3 in Rochester, Minnesota
+    </p>
+
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--education"
+    date="September 2021"
+    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
+    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
+  >
+    <h3 className="vertical-timeline-element-title">Resident Assistant</h3>
+    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
+    <p>
+      Cultivated positive communal living relationships in designated campus residence halls
+    </p>
+    <p>
+      Designed creative programs to facilitate social, cultural, and academic student development
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="April 2013"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    // icon={<SchoolIcon />}
+    date="September 2021"
+    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
+    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+    <h3 className="vertical-timeline-element-title">Career Peer Advisor</h3>
+    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
     <p>
-      Strategy, Social Media
+      Facilitate vocational resource acquisition for peers through resume co-development and design.
+    </p>
+    <p>
+      Tailor creative board designs aimed at improving student access to LinkedIn Learning.
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="November 2012"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    // icon={<SchoolIcon />}
+    date="August 2019 - May 2023"
+    iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(60,116,168)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
+    icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="2002 - 2006"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    // icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
+    <h3 className="vertical-timeline-element-title">Bachelor of Arts in Computer and Data Science</h3>
     <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
     <p>
-      Creative Direction, Visual Design
+      Cum laude graduate majoring in Computer Science with a minor in Data Science
     </p>
   </VerticalTimelineElement>
-  <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-    // icon={<StarIcon />}
-  />
 </VerticalTimeline>
 </div>
 
@@ -921,7 +962,7 @@ function App() {
 <div className=' waver bgsec3 pb-52'>
 <div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32'>Get In Touch</h1></div>
 <div class="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
-  <div class="w-full bg-gray-800 lg:rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 max-w-[950px] min-w-[350px] pb-30 formatter1">
+  <div class="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[370px] pb-30 formatter1">
     <div className="avatar online">
           <div className="w-24 rounded-full">
             <img src="./avatar.jpg" />
@@ -929,7 +970,8 @@ function App() {
     </div>
     <h2 class="text-2xl font-bold text-gray-200 mb-4">Contact Michael</h2>
 
-    <form class="flex flex-wrap formatter3">
+    <form>
+      <div class="flex flex-wrap formatter3">
       <input
         type="text"
         class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
@@ -968,11 +1010,18 @@ function App() {
         name="message"
         class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto w-full focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest h-52"
         placeholder="Type message or click mic to Dictate"
-      ></textarea>
+        disabled = {isListening}
+        value={isListening ? textInput + (transcript.length ? (textInput.length ? ' ' : '') + transcript : '') : textInput}
+        onChange = {(e) => {setTextInput(e.target.value)}}
+        type="textarea"
+      >
+    </textarea>
+    </div>
+    <button className="float-left bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150 animate-pulse" type="button" onClick={()=>{startStopListening()}}> {isListening ? 'Conclude Dictation' : 'Dictate'}</button>
 
       <button
         type="submit"
-        class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+        class=" float-right bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
       >
         Send
       </button>
@@ -1000,20 +1049,39 @@ frameborder="0"
 
 <footer className="bg-[#202428] footer footer-center p-10 text-base-content rounded">
   <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
+    <a href='#bio' className="link link-hover">About</a> 
+    <a href='#projects' className="link link-hover">Projects</a> 
+    <a href='#experiences' className="link link-hover">Experiences</a> 
+    <a href='#contact' className="link link-hover">Contact</a>
   </nav> 
   <nav>
-    <div className="grid grid-flow-col gap-4">
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+    <div className="flex justify-center space-x-6">
+    <a className='' href="https://github.com/1935-a11ly" target="_blank">
+  <     img
+            src= './github.png'
+            alt= "Image Description"
+            className='filter invert w-6 h-6'
+        />
+    </a>
+    <a className='' href="https://www.linkedin.com/in/michaeltkmusa/" target="_blank">
+        <img
+                src= './linkedin.png'
+                alt= "Image Description"
+                className='w-6 h-6'
+        />
+    </a>
+    <a className='' href="https://www.instagram.com/michaeltkmusa/" target="_blank">
+        <img
+                    src= './instagram.png'
+                    alt= "Image Description"
+                    className='w-[29px] h-[29px] mt-[-0.15rem]'
+        />
+    </a>
+
     </div>
   </nav> 
   <aside>
-    <p>Copyright © 2023 - Created and Maintained by Michael Musa</p>
+    <p>Copyright © 2023 | Michael Musa</p>
   </aside>
 </footer>
 
