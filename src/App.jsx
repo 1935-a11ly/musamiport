@@ -459,36 +459,17 @@ function App() {
   <div className='book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
         <div className='overflow-y-auto p-16 text-black md:h-[820px] sm:h-[500px] xs:h-[500px]'>
         <img src="./novel.png" className='scale-90 w-52 h-50 opacity-100 mb-10 rounded-3xl -mt-4'></img>
-        <p className='md:text-3xl sm:text-2xl xs:text-2xl text-black'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. A erat nam at lectus. Tellus mauris a diam maecenas. Eget 
-          lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Velit scelerisque in dictum non consectetur 
-          a erat nam at. In fermentum et sollicitudin ac orci. Nibh tortor id aliquet lectus proin. Dictum non 
-          consectetur a erat nam at lectus urna.
+        <p className='md:text-3xl sm:text-2xl xs:text-2xl text-black'>Michael Musa is a freelance software 
+        developer based in Houston, TX. His pursuit of user-centric design and development processes is 
+        founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
+        as a primary landscape. 
         </p>
         <p className='text-3xl py-10 text-black'>
-           In tellus integer feugiat scelerisque varius morbi enim nunc. Aliquam id diam maecenas ultricies mi eget mauris. Tempor nec feugiat nisl pretium fusce id velit. 
-          Cursus metus aliquam eleifend mi in. In nisl nisi scelerisque eu ultrices. Rutrum tellus pellentesque 
-          eu tincidunt. Ullamcorper morbi tincidunt ornare massa. Amet dictum sit amet justo. Pellentesque habitant 
-          morbi tristique senectus et netus et malesuada.Ut pharetra sit amet aliquam id diam maecenas ultricies. A 
-          lacus vestibulum sed arcu. Senectus et netus et malesuada fames ac turpis egestas integer. Cursus metus 
-          aliquam eleifend mi in nulla posuere sollicitudin. Volutpat odio facilisis mauris sit amet massa vitae 
-          tortor. Id neque aliquam vestibulum morbi blandit. Libero justo laoreet sit amet cursus. Augue interdum 
-          velit euismod in pellentesque massa. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Consectetur 
-          lorem donec massa sapien faucibus et molestie.Sed vulputate mi sit amet mauris commodo. 
-          
+        In essence, Musa is a storyteller turned developer who strives to create compelling applications 
+        and designs for corporations. Coupling his knowledge in the realm of Web Development with his 
+        passion for Data Science and Sociology, Musa aims to create efficient, data-driven solutions that 
+        are a visual aid to a corporation's philosophies and best practices. 
         </p>
-        <p className='text-3xl text-black'>
-          Augue lacus viverra 
-          vitae congue eu consequat ac felis. Nec sagittis aliquam malesuada bibendum arcu. A diam sollicitudin tempor 
-          id eu nisl. Eu tincidunt tortor aliquam nulla facilisi. Ullamcorper velit sed ullamcorper morbi. Eget arcu 
-          dictum varius duis at consectetur lorem. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. 
-          Faucibus scelerisque eleifend donec pretium. Arcu dui vivamus arcu felis bibendum. Urna cursus eget nunc 
-          scelerisque viverra mauris in aliquam. At consectetur lorem donec massa. At elementum eu facilisis sed odio. 
-          Justo donec enim diam vulputate ut pharetra sit amet aliquam. Consequat interdum varius sit amet mattis 
-          vulputate. Aliquet nibh praesent tristique magna sit amet. Quisque id diam vel quam elementum. Sem fringilla 
-          ut morbi tincidunt augue.
-        </p>
-
         </div>
 
 </div>
