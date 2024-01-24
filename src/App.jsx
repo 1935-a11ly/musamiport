@@ -955,8 +955,8 @@ function App() {
       >
     </textarea>
     </div>
-    <button className="float-left py-2 mt-2 transition ease-in-out duration-150 " type="button" onClick={()=>{startStopListening()}}> {isListening ? <img src="micactive.png" className = "invert w-12 h-12 bg-[#06b6d4] rounded-full p-2" alt="ActiveMic" /> : <img src="micinactive.png" className = "invert w-12 h-12 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full p-2 " alt="InactiveMic" />}</button>
-
+    <button className="float-left py-[5px] mt-2 transition ease-in-out duration-150 " type="button" onClick={()=>{startStopListening()}}> {isListening ? <img src="micactive.png" className = "invert w-12 h-12 bg-[#06b6d4] rounded-full p-2" alt="ActiveMic" /> : <img src="micinactive.png" className = "invert w-12 h-12 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full p-2 " alt="InactiveMic" />}</button>
+    <p className="mt-[8px] ml-4 float-left " type="text"> {isListening ? <p className='py-2 mt-2 transition ease-in-out duration-150 animate-pulse text-red-600 text-lg'>Listening</p> : <p className='hidden'>Not Listening</p>}</p>
       <button
         type="submit"
         class=" float-right bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
