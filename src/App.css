@@ -144,7 +144,6 @@ transition: 0.1s linear 5.0s;
 }
 
 .major {
-  height: 1300px;
   background: url('../bgtrial.jpg') center center   no-repeat;
   background-size:cover;
   /* background-blend-mode:screen; */
@@ -270,27 +269,12 @@ h1{
   z-index: 9999;
 }
 
-.wordCarousel {
-  font-size: 36px;
-  font-weight: 100;
+.craft{ 
+
+  font-size: 50px;
   color: #eee;
-  div {
-      overflow: hidden;
-      position: relative;
-      /* float: right; */
-      height: 65px;
-      padding-top: 10px;
-      margin-top: -10px;
-      li {
-          font-family: Serif;
-          color: #eee;
-          font-weight: 700;
-          padding: 0 10px;
-          height: 45px;
-          margin-bottom: 45px;
-          display: block;
-      }
-  }
+  font-family: Serif;
+
 }
 
 .flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }

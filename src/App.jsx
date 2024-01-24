@@ -339,29 +339,22 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major pt-20 lg:h-[1300px] md:h-[1100px] sm:h-[900px] xs:h-[900px] bg-[#dbe3e4]'>
+<div id='tops' className='major lg:h-[1400px] md:h-[1400px] sm:h-[1300px] xs:h-[1300px] bg-[#dbe3e4]'>
 
 
 
 
 
 
-<div className='pt-0 pb-10 '>
-<div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'>
-<video id = 'bio' src="./banvid2.mp4" autoPlay muted className='absolute -mt-2 bg-black w-full h-full rounded-3xl opacity-[20%]'/>  
-<h4 className="wordCarousel formatter3">
-    <span className='relative z-0'>My Story </span>
-    <div className='md:block xs:hidden'>
-        <ul class="flip5">
-            <li>Is A Part of OUR Story</li>
-            <li>Is Built on Relationships</li>
-            <li>Reflects My Hopes</li>
-            <li>Is Advanced By Purpose</li>
-            <li>Begins With A Dream</li>
-        </ul>
-    </div>
-</h4>
+<div className='pt-0 -pb-[25%] '>
+{/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
+{/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
+<div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[250px] md:invisible sm:invisible xs:invisible">
+<video id = 'bio' src="./banvid2.mp4" autoPlay muted loop className='absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%] lg:visible md:invisible sm:invisible xs:invisible'/>  
 </div>
+<h4 className="wordCarousel formatter3 -mt-[15.5%] mb-32 ">
+    <span className=' relative craft z-0 '>CRAFTING DIGITAL WORLDS</span>
+</h4>
 
 {/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
 
@@ -453,18 +446,20 @@ function App() {
       <div className="input bg-opacity-20">https://michaelkmusa.com</div>
       {/* possibly add the react typed there when doing animations */}
   </div>
-  <div className="flex justify-center px-0 md:py-0 sm:py-0 xs:py-0 bg-base-200 bg-opacity-[10%] backdrop-blur-sm">
+  <div className="px-0 md:py-0 sm:py-0 xs:py-0 bg-base-200 bg-opacity-[10%] backdrop-blur-sm -pb-[50px]">
     
-
-  <div className='book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
-        <div className='overflow-y-auto p-16 text-black md:h-[820px] sm:h-[500px] xs:h-[500px]'>
+  <img src="./booklogo.png" className='scale-[50%] '></img>
+  <h3 className='text-center text-[20px] -mt-[13%]'>Crafting Digital Worlds: Meet the Architect of this Online Experiences</h3>
+  <img src="./downloadlogo.png" className='invert ml-[7.2%] -mt-[38%] -mb-[65%] scale-[8%] animate-pulse'></img>
+  <div className=' book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
+        <div className='overflow-y-auto p-12 text-black md:h-[700px] sm:h-[500px] xs:h-[500px]'>
         <img src="./novel.png" className='scale-90 w-52 h-50 opacity-100 mb-10 rounded-3xl -mt-4'></img>
-        <p className='md:text-3xl sm:text-2xl xs:text-2xl text-black'>Michael Musa is a freelance software 
+        <p className='text-[30px] text-black'>Michael Musa is a freelance software 
         developer based in Houston, TX. His pursuit of user-centric design and development processes is 
         founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
         as a primary landscape. 
         </p>
-        <p className='text-3xl py-10 text-black'>
+        <p className='text-[30px] py-10 text-black'>
         In essence, Musa is a storyteller turned developer who strives to create compelling applications 
         and designs for corporations. Coupling his knowledge in the realm of Web Development with his 
         passion for Data Science and Sociology, Musa aims to create efficient, data-driven solutions that 
@@ -502,7 +497,7 @@ function App() {
 
 
 
-<div id="vanta" className='xl:h-[1200px] lg:h-[1180px] md:h-[1180px] sm:h-[1100px] xs:h-[1000px] -mt-5'>
+<div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5'>
     <h1 id = 'projects' className='formatter1 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl mt-5 text-black hover:text-[#fdacd5] pt-32 pb-12'>Projects</h1>
     <div className='formatter2 flex items-center justify-center space-x-4'>
 
@@ -802,7 +797,7 @@ function App() {
 
 
 
-<div className="join flex justify-center w-full py-8 gap-2">
+<div className="join flex justify-center w-full py-8 gap-2 pb-36">
   <a href="#proj1" className="join-item btn btn-xs" type="radio" name="options" aria-label="1" checked>1</a> 
   <a href="#proj2" className="join-item btn btn-xs" type="radio" name="options" aria-label="2">2</a> 
   <a href="#proj3" className="join-item btn btn-xs" type="radio" name="options" aria-label="3">3</a> 
