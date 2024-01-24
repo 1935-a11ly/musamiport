@@ -498,7 +498,7 @@ function App() {
 
 
 <div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5'>
-    <h1 id = 'projects' className='formatter1 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl mt-5 text-black hover:text-[#fdacd5] pt-32 pb-12'>Projects</h1>
+    <h1 id = 'projects' className='formatter1 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl mt-5 text-black hover:text-[#fdacd5] pt-32 pb-24 universalfont'>PROJECTS</h1>
     <div className='formatter2 flex items-center justify-center space-x-4'>
 
 
@@ -813,7 +813,7 @@ function App() {
 
 
 <div className='bg-[#202428] pt-40 pb-20'>
-<h1 id = 'experiences' className='pb-16 formatter1 text-5xl text-white mb-16'>Experiences</h1>
+<h1 id = 'experiences' className='pb-16 formatter1 text-5xl text-white mb-16 universalfont'>EXPERIENCES</h1>
 
 <VerticalTimeline className='pt-12'>
   <VerticalTimelineElement
@@ -898,7 +898,7 @@ function App() {
 
 
 <div className=' waver bgsec3 pb-52'>
-<div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32'>Get In Touch</h1></div>
+<div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32 universalfont'>Get In Touch</h1></div>
 <div class="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
   <div class="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[370px] pb-30 formatter1">
     <div className="avatar online">
@@ -906,7 +906,7 @@ function App() {
             <img src="./avatar.jpg" />
           </div>
     </div>
-    <h2 class="text-2xl font-bold text-gray-200 mb-4">Contact Michael</h2>
+    <h2 class="text-2xl font-bold text-gray-200 mb-4 universalfont">Contact Michael</h2>
 
     <form className='pb-[100px]'>
       <div class="flex flex-wrap formatter3">
@@ -972,8 +972,8 @@ function App() {
 <div className="spinner w-12 h-12 formatter3">
   <div className="spinner1 w-12 h-12"></div>
 </div>
-<h1 id = 'ai' className='formatter3 text-5xl pt-4 font-white pt-8'>MUS.AI</h1>
-<h1 className='formatter3 text-3xl mt-10 mb-8 italic xs:hidden md:block'>"How my journey takes shape."</h1>
+<h1 id = 'ai' className='formatter3 text-5xl pt-4 text-white pt-8 universalfont'>MUS.AI</h1>
+<h1 className='formatter3 text-3xl mt-10 mb-8 italic xs:hidden md:block text-white'>"How my journey takes shape."</h1>
 
 <iframe
 src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
@@ -987,10 +987,10 @@ frameborder="0"
 
 <footer className="bg-[#202428] footer footer-center p-10 text-base-content rounded">
   <nav className="grid grid-flow-col gap-4">
-    <a href='#bio' className="link link-hover">About</a> 
-    <a href='#projects' className="link link-hover">Projects</a> 
-    <a href='#experiences' className="link link-hover">Experiences</a> 
-    <a href='#contact' className="link link-hover">Contact</a>
+    <a href='#bio' className="link link-hover text-white">About</a> 
+    <a href='#projects' className="link link-hover text-white">Projects</a> 
+    <a href='#experiences' className="link link-hover text-white">Experiences</a> 
+    <a href='#contact' className="link link-hover text-white">Contact</a>
   </nav> 
   <nav>
     <div className="flex justify-center space-x-6">
