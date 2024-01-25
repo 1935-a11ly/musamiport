@@ -340,27 +340,23 @@ function App() {
 {/* removed major class to tops it had backdrop */}
 
 <div id='tops' className='major lg:h-[1400px] md:h-[1400px] sm:h-[1300px] xs:h-[1300px] bg-[#dbe3e4]'>
-
-
-
-
-
-
 <div className='pt-0 -pb-[25%] '>
 {/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
 {/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
 <div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[250px] md:invisible sm:invisible xs:invisible">
-<video id = 'bio' src="./banvid2.mp4" autoPlay muted loop className='absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%] lg:visible md:invisible sm:invisible xs:invisible'/>  
+<video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%] lg:visible md:invisible sm:invisible xs:invisible'/>  
 </div>
-<h4 className="wordCarousel formatter3 -mt-[15.5%] mb-32 ">
-    <span className=' relative craft z-0 '>CRAFTING DIGITAL WORLDS</span>
+
+
+<h4 className="wordCarousel formatter3 -mt-[15.5%] mb-32 pb-12">
+    <span className=' relative craft z-0 text-[#6b686e]'>CRAFTING <span className='text-white'>DIGITAL</span> WORLDS</span>
 </h4>
 
 {/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
 
 </div>
 
-<div className=''>
+<div className='pb-12'>
 <video src="./test1.mp4" autoPlay muted loop className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
@@ -429,7 +425,7 @@ function App() {
 
 
 
-<div className="article mockup-browser bg-base-300 max-w-[600px] max-h-[800px] min-w-[370px] min-h-[370px]  lg:float-right xs:scale-[88%] bg-opacity-[55%] backdrop-blur-sm">
+<div className="lg:w-[50%] article mockup-browser bg-base-300 max-w-[800px] max-h-[800px] min-w-[600px] min-h-[370px]  lg:float-right xs:scale-[88%] bg-opacity-[55%] backdrop-blur-sm">
   {/* <div className="mockup-browser-toolbar">
     <div className="input">https://michaelkmusa.com</div>
   </div> */}
@@ -446,12 +442,13 @@ function App() {
       <div className="input bg-opacity-20">https://michaelkmusa.com</div>
       {/* possibly add the react typed there when doing animations */}
   </div>
-  <div className="px-0 md:py-0 sm:py-0 xs:py-0 bg-base-200 bg-opacity-[10%] backdrop-blur-sm -pb-[50px]">
-    
-  <img src="./booklogo.png" className='scale-[50%] '></img>
-  <h3 className='text-center text-[20px] -mt-[13%]'>Crafting Digital Worlds: Meet the Architect of this Online Experiences</h3>
-  <img src="./downloadlogo.png" className='invert ml-[7.2%] -mt-[38%] -mb-[65%] scale-[8%] animate-pulse'></img>
-  <div className=' book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
+  <div className="px-0 md:py-0 sm:py-0 xs:py-0 transparent bg-opacity-[10%] -pb-[50px]">
+  
+  <img src="./booklogo.png" className='scale-[50%] -mt-[10%]'></img>
+  <div className='bg-base-300 -mt-[40%] py-[40%] bg-opacity-[55%]'>
+  <h3 className='text-center text-[20px] -mt-[10%] pb-2'>Crafting Digital Worlds: Meet the Architect of this Online Experiences
+</h3>
+  <div className='-mt-[18%] book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
         <div className='overflow-y-auto p-12 text-black md:h-[700px] sm:h-[500px] xs:h-[500px]'>
         <img src="./novel.png" className='scale-90 w-52 h-50 opacity-100 mb-10 rounded-3xl -mt-4'></img>
         <p className='text-[30px] text-black'>Michael Musa is a freelance software 
@@ -459,7 +456,7 @@ function App() {
         founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
         as a primary landscape. 
         </p>
-        <p className='text-[30px] py-10 text-black'>
+        <p className='text-[30px] py-[2.5%] text-black'>
         In essence, Musa is a storyteller turned developer who strives to create compelling applications 
         and designs for corporations. Coupling his knowledge in the realm of Web Development with his 
         passion for Data Science and Sociology, Musa aims to create efficient, data-driven solutions that 
@@ -471,7 +468,7 @@ function App() {
 
 
 
-
+</div>
   </div>
 </div>
 </div>

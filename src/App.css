@@ -24,6 +24,13 @@ body {
   text-align: center;
 }
 
+.formatter4 {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
 .article {
   margin: 0 auto;
   /* padding: 2rem; */
