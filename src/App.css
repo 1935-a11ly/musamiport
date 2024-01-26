@@ -237,17 +237,43 @@ p{
   }
 }
 
-@media (min-width: 1025px) {
-  .backdropp{
-    height: 1500px;
-    background: url('../finalai.png') center center   no-repeat;
-    background-size:cover;
+@media (min-width: 1145px) {
+  .backdrop1{
+    margin-top: -515px;
+    height: 600px;
+    background: url('../macperfect.png') no-repeat;
+    background-position: center;
+    background-size: contain;
     /* background-position: top 10px right 20px; */
     width:100%;
   }
+  .framee{
+    display: none;
+  }
+  .frame2{
+    margin-top: 160px;  
+  }
+  .bubble{
+    display: none;
+  }
 }
 
-@media (max-width: 1023px) {
+@media screen and (max-width: 1144px) and (min-width: 658px) {
+  .framee{
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    height: 500px;
+  }
+  .frame2{
+    display: none;  
+  }
+  .bubble{
+    display: block;
+  }
+}
+
+@media (max-width: 657px) {
   .backdropp{
     height: 1100px;
     background: url('../mobile.png') center center   no-repeat;
@@ -255,7 +281,22 @@ p{
     /* background-position: top 10px right 20px; */
     width:100%;
   }
+  .backdrop1{
+    display: none !important;
+  }
+  .bubble{
+    display: none;
+  }
+  .frame2{
+    display: none;  
+  }
 }
+@media (max-width: 639px) {
+  #dateInput{
+    width: 146px !important;
+  }
+}
+
 
 .overlay {
   position: fixed;

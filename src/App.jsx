@@ -965,21 +965,30 @@ function App() {
 </div>
 </div>
 
-<div className='backdropp bg-black pt-24 pb-16'>
+<div className='backdropp bg-black pt-24 pb-16 px-32'>
 <div className="spinner w-12 h-12 formatter3">
   <div className="spinner1 w-12 h-12"></div>
 </div>
 <h1 id = 'ai' className='formatter3 text-5xl pt-4 text-white pt-8 universalfont'>MUS.AI</h1>
 <h1 className='formatter3 text-3xl mt-10 mb-8 italic xs:hidden md:block text-white'>"How my journey takes shape."</h1>
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
+width="50%"
+height='70%'
+className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 min-w-[300px] max-w-[1000px] xs:pl-[15px] xs:pt-24 md:hidden'
+frameborder="0"
+></iframe>
+
 
 <iframe
 src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
 width="50%"
 height='70%'
-className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 lg:float-left lg:pl-20 min-w-[300px] xs:pl-[15px] xs:pt-24'
+className='frame2 relative max-h-[450px] min-h-[420px] formatter3 min-w-[700px] max-w-[1000px] object-scale-down lg:scale-[100%] md:scale-[70%] sm:scale-[50%]'
 frameborder="0"
 ></iframe>
-
+<div className='backdrop1'>
+</div>
 </div>
 
 <footer className="bg-[#202428] footer footer-center p-10 text-base-content rounded">
