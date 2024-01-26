@@ -965,7 +965,7 @@ function App() {
 </div>
 </div>
 
-<div className='backdropp bg-black pt-24 pb-16 px-32'>
+<div className='backdropp bg-black pt-24 pb-16 lg:px-32'>
 <div className="spinner w-12 h-12 formatter3">
   <div className="spinner1 w-12 h-12"></div>
 </div>
@@ -978,8 +978,6 @@ height='70%'
 className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 min-w-[300px] max-w-[1000px] xs:pl-[15px] xs:pt-24 md:hidden'
 frameborder="0"
 ></iframe>
-
-
 <iframe
 src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
 width="50%"

@@ -271,6 +271,9 @@ p{
   .bubble{
     display: block;
   }
+  .backdrop1{
+    display: none !important;
+  }
 }
 
 @media (max-width: 657px) {
@@ -290,13 +293,15 @@ p{
   .frame2{
     display: none;  
   }
+  .framee{
+
+  }
 }
 @media (max-width: 639px) {
   #dateInput{
     width: 146px !important;
   }
 }
-
 
 .overlay {
   position: fixed;
