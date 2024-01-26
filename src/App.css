@@ -293,9 +293,7 @@ p{
   .frame2{
     display: none;  
   }
-  .framee{
 
-  }
 }
 @media (max-width: 639px) {
   #dateInput{
