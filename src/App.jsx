@@ -346,11 +346,13 @@ function App() {
 <h4 className="formatter3 pt-32">
     <span className='craft z-0 text-white drop-shadow-2xl'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='-mt-[15%] scale-[60%]'/></span>
 </h4>
-<h4 className="formatter3 -mt-[7%] pt-[3%]">
-  <span className=' text-white craft text-[100px]'>WORLDS</span>
+<h4 className="formatter3 md:-mt-[7%] md:pt-[3%] sm:pt-[0%]">
+  <span className=' text-white craft md:text-[100px] sm:text-[100px] xs:text-[70px]'>WORLDS</span>
 </h4>
-<div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:invisible sm:invisible xs:invisible">
-<video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%] lg:visible md:invisible sm:invisible xs:invisible'/>  
+<div className='lg:scale-100 md:scale-[70%] sm:scale-[60%] xs:scale-[60%] lg:mt-0 md:mt-[20px] sm:mt-[25px]  xs:mt-[95px] sm:mr-[0px] xs:mr-[27%] md:block sm:hidden xs:hidden'>
+<div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:block sm:hidden xs:hidden">
+<video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%]'/>  
+</div>
 </div>
 
 {/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
