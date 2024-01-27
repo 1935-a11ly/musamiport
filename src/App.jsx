@@ -349,7 +349,7 @@ function App() {
 
 
 <h4 className="wordCarousel formatter3 -mt-[15.5%] mb-32 pb-12">
-    <span className=' relative craft z-0 text-[#6b686e]'>CRAFTING <span className='text-white'>DIGITAL</span> WORLDS</span>
+    <span className=' relative craft z-0 bg-gradient-to-r from-gray-950 via-gray-950 to-zinc-200 bg-clip-text text-transparent '>CRAFTING <span className=''>DIG</span><span className='text-zinc-50'>ITAL</span><span className='text-white pl-4'>WORLDS</span></span>
 </h4>
 
 {/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
