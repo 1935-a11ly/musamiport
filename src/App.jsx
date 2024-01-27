@@ -339,24 +339,25 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[1400px] md:h-[1400px] sm:h-[1300px] xs:h-[1300px] bg-[#dbe3e4]'>
+<div id='tops' className='major lg:h-[2000px] md:h-[1800px] sm:h-[1600px] xs:h-[1400px] bg-[#dbe3e4]'>
 <div className='pt-0 -pb-[25%] '>
 {/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
 {/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
-<div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[250px] md:invisible sm:invisible xs:invisible">
+<h4 className="formatter3 pt-32">
+    <span className='craft z-0 text-white drop-shadow-2xl'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='-mt-[15%] scale-[60%]'/></span>
+</h4>
+<h4 className="formatter3 -mt-[7%] pt-[3%]">
+  <span className=' text-white craft text-[100px]'>WORLDS</span>
+</h4>
+<div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:invisible sm:invisible xs:invisible">
 <video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%] lg:visible md:invisible sm:invisible xs:invisible'/>  
 </div>
-
-
-<h4 className="wordCarousel formatter3 -mt-[15.5%] mb-32 pb-12">
-    <span className=' relative craft z-0 bg-gradient-to-r from-gray-950 via-gray-950 to-zinc-200 bg-clip-text text-transparent '>CRAFTING <span className=''>DIG</span><span className='text-zinc-50'>ITAL</span><span className='text-white pl-4'>WORLDS</span></span>
-</h4>
 
 {/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
 
 </div>
 
-<div className='pb-12'>
+<div className='pb-12 pt-32'>
 <video src="./test1.mp4" autoPlay muted loop className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
