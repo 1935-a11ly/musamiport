@@ -438,3 +438,15 @@ h1{
 		width: 250px;
 	}
 }
+
+.elementToFadeInAndOut {
+    opacity: 1;
+    animation: fade 2s linear;
+    animation-delay: 8s;
+}
+
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
