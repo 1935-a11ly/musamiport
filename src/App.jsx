@@ -357,8 +357,8 @@ function App() {
 
 
 <div className='sm:scale-[70%] xs:scale-[60%] md:hidden pt-[40px]'>
-<div id = 'bio' class="bg-black h-[350px] w-[350px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:hidden">
-<video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[350px] w-[350px] rounded-full opacity-[100%]'/>  
+<div class="bg-black h-[350px] w-[350px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:hidden">
+<video src="./earth1.mp4" playsinline autoplay autoPlay defaultMuted muted loop className='invert absolute bg-black h-[350px] w-[350px] rounded-full opacity-[100%]'/>  
 </div>
 </div>
 
@@ -368,15 +368,11 @@ function App() {
 </div>
 
 <div className='pb-12 pt-32 mt-0'>
-<fieldset disabled>
-<video disabled playsinline autoplay loop muted defaultMuted className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'>
-  <source type='video/mp4' src="./test1.mp4" ></source>
-</video>  
+<video src="./test1.mp4" autoPlay muted loop className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
   <h2 className='imagine xl:text-[75px] lg:text-[30px] sm:text-[50px] xs:text-[30px] px-8 text-white '> From Imagination to Immersion, <br/> I Craft Digital Tales That Bring Ideas to Life</h2>
 </div>
-</fieldset>
 
 {/* mobile stuff only */}
 
