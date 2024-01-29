@@ -369,7 +369,7 @@ function App() {
 
 <div className='pb-12 pt-32 mt-0'>
 <fieldset disabled>
-<video src="./test1.mp4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
+<video src="./test1.mp4" autoplay loop muted defaultMuted className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
   <h2 className='imagine xl:text-[75px] lg:text-[30px] sm:text-[50px] xs:text-[30px] px-8 text-white '> From Imagination to Immersion, <br/> I Craft Digital Tales That Bring Ideas to Life</h2>
