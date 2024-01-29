@@ -371,7 +371,7 @@ function App() {
 <div className='text-left px-6'>
 <div class="-mt-[0px] formatter3 mobile rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-clip-border text-gray-700 shadow-md">
   <div className='pl-6 pt-8'>
-  <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-[#cba787]'></img>
+  <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-black'></img>
   </div>
   <div class="p-6">
     <h5 class="pb-6 mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
