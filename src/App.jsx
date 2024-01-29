@@ -339,7 +339,7 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[2150px] md:h-[1850px] sm:h-[1850px] xs:h-[1850px] bg-[#dbe3e4]'>
+<div id='tops' className='major lg:h-[2150px] md:h-[1950px] sm:h-[1950px] xs:h-[1950px] bg-[#dbe3e4]'>
 <div className='pt-0 -pb-[25%] '>
 {/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
 {/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
@@ -347,7 +347,7 @@ function App() {
     <span className='craft z-0 text-white drop-shadow-2xl'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='-mt-[15%] scale-[60%]'/></span>
 </h4>
 <h4 className="formatter3 md:-mt-[7%] md:pt-[3%] sm:pt-[0%]">
-  <span className=' text-white craft md:text-[100px] sm:text-[100px] xs:text-[70px]'>WORLDS</span>
+  <span className=' text-white craft md:text-[100px] sm:text-[100px] xs:text-[85px]'>WORLDS</span>
 </h4>
 <div className='lg:scale-100 md:scale-[70%] sm:scale-[60%] xs:scale-[60%] lg:mt-0 md:mt-[20px] sm:mt-[25px]  xs:mt-[95px] sm:mr-[0px] xs:mr-[27%] md:block sm:hidden xs:hidden'>
 <div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:block sm:hidden xs:hidden">
@@ -356,7 +356,7 @@ function App() {
 </div>
 
 
-<div className='scale-[60%] md:hidden pt-[82px]'>
+<div className='sm:scale-[70%] xs:scale-[60%] md:hidden pt-[40px]'>
 <div id = 'bio' class="bg-black h-[350px] w-[350px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:hidden">
 <video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[350px] w-[350px] rounded-full opacity-[100%]'/>  
 </div>
@@ -367,7 +367,7 @@ function App() {
 
 </div>
 
-<div className='pb-12 pt-32'>
+<div className='pb-12 pt-32 mt-0'>
 <video src="./test1.mp4" autoPlay muted loop className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
@@ -376,8 +376,8 @@ function App() {
 
 {/* mobile stuff only */}
 
-<div className='text-left px-6'>
-<div class="-mt-[92px] formatter3 mobile rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-opacity-[25%] bg-clip-border text-gray-700 shadow-md backdrop-blur-sm">
+<div className='text-left px-6 '>
+<div class="-mt-[92px] formatter3 mobile lg:mt-[50px] md:mt-[0px] sm:mt-[0px] xs:mt-[0px] rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-opacity-[25%] bg-clip-border text-gray-700 shadow-md backdrop-blur-sm">
   <div className='pl-6 pt-8'>
   <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-black'></img>
   </div>
