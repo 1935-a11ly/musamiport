@@ -10,6 +10,10 @@ export default {
       animation: {
         'spin-slow': 'spin 30s linear infinite',
       }
+      ,
+      cursor: {
+        'fancy': 'url(./cursor.png), pointer',
+      }
     },
   },
   plugins: [
