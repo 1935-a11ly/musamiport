@@ -339,7 +339,7 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[2150px] md:h-[2300px] sm:h-[2100px] xs:h-[1900px] bg-[#dbe3e4]'>
+<div id='tops' className='major lg:h-[2150px] md:h-[1850px] sm:h-[1850px] xs:h-[1850px] bg-[#dbe3e4]'>
 <div className='pt-0 -pb-[25%] '>
 {/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
 {/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
@@ -355,6 +355,14 @@ function App() {
 </div>
 </div>
 
+
+<div className='scale-[60%] md:hidden pt-[82px]'>
+<div id = 'bio' class="bg-black h-[350px] w-[350px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:hidden">
+<video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[350px] w-[350px] rounded-full opacity-[100%]'/>  
+</div>
+</div>
+
+
 {/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
 
 </div>
@@ -369,7 +377,7 @@ function App() {
 {/* mobile stuff only */}
 
 <div className='text-left px-6'>
-<div class="-mt-[0px] formatter3 mobile rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-clip-border text-gray-700 shadow-md">
+<div class="-mt-[92px] formatter3 mobile rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-opacity-[25%] bg-clip-border text-gray-700 shadow-md backdrop-blur-sm">
   <div className='pl-6 pt-8'>
   <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-black'></img>
   </div>
@@ -1061,7 +1069,7 @@ function App() {
 
 
 <div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5'>
-    <h1 id = 'projects' className='formatter1 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl mt-5 text-black hover:text-[#fdacd5] pt-32 pb-24 universalfont'>PROJECTS</h1>
+    <h1 id = 'projects' className='formatter1 text-5xl mt-5 text-black hover:text-[#fdacd5] pt-32 pb-24 universalfont'>PROJECTS</h1>
     <div className='formatter2 flex items-center justify-center space-x-4'>
 
 
