@@ -54,11 +54,6 @@ function App() {
     './minime2.png',
     './minime3.png',
   ];
-  const imageSources2 = [
-    './minime.png',
-    './minime2.png',
-    './minime3.png',
-  ];
 
   useEffect(() => {
     const imageInterval = setInterval(() => {
@@ -68,12 +63,12 @@ function App() {
       // Wait for a brief moment before changing the image source
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageSources.length);
-      }, 1000);
+      }, 2000);
 
       // After changing the image source, set the opacity to 1 for a fade-in effect
       setTimeout(() => {
         setImageOpacity(1);
-      }, 1000);
+      }, 2100);
     }, 8000);
 
     return () => {
