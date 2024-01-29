@@ -339,7 +339,7 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[2000px] md:h-[1800px] sm:h-[1600px] xs:h-[1400px] bg-[#dbe3e4]'>
+<div id='tops' className='major lg:h-[2150px] md:h-[2300px] sm:h-[2100px] xs:h-[1900px] bg-[#dbe3e4]'>
 <div className='pt-0 -pb-[25%] '>
 {/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
 {/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
@@ -475,6 +475,596 @@ function App() {
   </div>
 </div>
 </div>
+
+
+
+
+
+
+
+<div className="slider bg-transparent pt-16">
+	<div className="slide-track bg-transparent">
+		<div className="slide">
+      <h1 className='craft2 text-[50px] h-[70px] w-[650px]'> YEARS OF EXPERIENCE</h1>
+		</div>
+		<div className="slide">
+    <h1 className='craft text-[#cba787] h-[70px] w-[1000px] pl-[360px]'> YEARS OF EXPERIENCE</h1>
+		</div>
+    <div className="slide">
+    <h1 className='craft2 text-[50px] h-[70px] w-[1350px] pl-[720px]'> YEARS OF EXPERIENCE</h1>
+		</div>
+    <div className="slide">
+    <h1 className='craft text-[#cba787] h-[70px] w-[1700px] pl-[1080px]'> YEARS OF EXPERIENCE</h1>
+		</div>
+    <div className="slide">
+    <h1 className='craft2 text-[50px] h-[70px] w-[2050px] pl-[1440px]'> YEARS OF EXPERIENCE</h1>
+		</div>
+    <div className="slide">
+    <h1 className='craft text-[#cba787] h-[70px] w-[2400px] pl-[1800px]'> YEARS OF EXPERIENCE</h1>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div className="slider2 bg-transparent -mt-16">
+	<div className="slide-track2 bg-transparent">
+		<div className="slide2">
+      <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm ">
+        <div className="flex gap-2">
+          <img alt="" src= './reactlogo.png' className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">REACT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div className="slide2 pl-[130px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javaslogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVASCRIPT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[270px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pythonlogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PYTHON</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './sqllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">SQL</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javalogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVA</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './nextlogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">NEXT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './djangologo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">DJANGO</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              1 YEAR
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './flasklogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">FLASK</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './csslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">CSS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pandaslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PANDAS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './htmllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">HTML</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javaslogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVASCRIPT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pythonlogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PYTHON</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './sqllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">SQL</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javalogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVA</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './nextlogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">NEXT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './djangologo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">DJANGO</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              1 YEAR
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './flasklogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">FLASK</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './csslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">CSS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pandaslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PANDAS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './htmllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">HTML</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+      <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm ">
+        <div className="flex gap-2">
+          <img alt="" src= './reactlogo.png' className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">REACT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javaslogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVASCRIPT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pythonlogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PYTHON</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './sqllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">SQL</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javalogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVA</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './nextlogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">NEXT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './djangologo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">DJANGO</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              1 YEAR
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './flasklogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">FLASK</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './csslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">CSS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pandaslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PANDAS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './htmllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">HTML</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javaslogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVASCRIPT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pythonlogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PYTHON</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              3.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './sqllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">SQL</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './javalogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">JAVA</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './nextlogo.png' alt="" className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">NEXT</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './djangologo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">DJANGO</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              1 YEAR
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './flasklogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">FLASK</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './csslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">CSS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              4 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './pandaslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">PANDAS</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              2.5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div className="slide2 pl-[410px]">
+    <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
+        <div className="flex gap-2">
+          <img src= './htmllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
+          <div className="flex flex-col text-black">
+            <span className="universalfont text-[25px]">HTML</span>
+            <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
+              5 YEARS
+            </p>
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
 
 
 
