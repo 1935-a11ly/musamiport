@@ -339,7 +339,7 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[2150px] md:h-[1950px] sm:h-[1950px] xs:h-[1950px] bg-[#dbe3e4]'>
+<div id='tops' className='major lg:h-[2150px] md:h-[1650px] sm:h-[1650px] xs:h-[1650px] bg-[#dbe3e4]'>
 <div className='pt-0 -pb-[25%] '>
 {/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
 {/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
@@ -463,7 +463,7 @@ function App() {
 
 
 
-<div className="slider bg-transparent pt-16">
+<div className="slider bg-transparent pt-16 lg:block md:hidden sm:hidden xs:hidden">
 	<div className="slide-track bg-transparent">
 		<div className="slide">
       <h1 className='craft2 text-[50px] h-[70px] w-[650px]'> YEARS OF EXPERIENCE</h1>
@@ -490,7 +490,7 @@ function App() {
 
 
 
-<div className="slider2 bg-transparent -mt-16">
+<div className="slider2 bg-transparent -mt-16 lg:block md:hidden sm:hidden xs:hidden">
 	<div className="slide-track2 bg-transparent">
 		<div className="slide2">
       <div className="border-[1px] border-[#cba787] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm ">
