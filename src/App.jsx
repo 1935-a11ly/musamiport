@@ -369,7 +369,7 @@ function App() {
 
 <div className='pb-12 pt-32 mt-0'>
 <fieldset disabled>
-<video playsinline autoplay loop muted defaultMuted className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'>
+<video disabled playsinline autoplay loop muted defaultMuted className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'>
   <source type='video/mp4' src="./test1.mp4" ></source>
 </video>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
