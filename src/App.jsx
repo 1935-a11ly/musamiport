@@ -142,7 +142,7 @@ function App() {
     {/* <div className='float-left text-xl font-sans'>Musa.</div> */}
     <div className="btm-nav overlay lg:hidden sm:inline-flex rounded-full scale-[90%] backdrop-blur-sm bg-opacity-[85%]">
   <button>
-    <a href='#bio'>
+    <a href='#about'>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
       <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>  
@@ -184,7 +184,7 @@ function App() {
     <div>
     <ul className="menu bg-base-200 lg:menu-horizontal rounded-box bg-opacity-90 lg:inline-flex sm:hidden xs:hidden">
   <li>
-    <a href='#bio'>
+    <a href='#about'>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
       <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
@@ -365,70 +365,43 @@ function App() {
   
   <h2 className='imagine xl:text-[75px] lg:text-[30px] sm:text-[50px] xs:text-[30px] px-8 text-white '> From Imagination to Immersion, <br/> I Craft Digital Tales That Bring Ideas to Life</h2>
 </div>
-<div className="xl:hidden pb-4 rounded-lg p-8"><h2 className='text-[30px] text-white italic '> "From Imagination to Immersion: </h2><h2 className='text-[30px] text-white italic'> I Craft Digital Tales That Bring Ideas to Life."
-</h2></div>
-
-
 
 {/* mobile stuff only */}
 
-
-
-<div className='mobile'>
-
-    <div className='m-4 p-4 bg-gray-800 minhttp://localhost:5173/#-h-[300px] max-h-500px rounded-3xl bg-opacity-50 backdrop-blur-sm'>
-
-          <div className='inline-flex'>
-                <img
-                  className='w-[40%] h-[40%] rounded-3xl'
-                  src="./avatar1.jpg"
-                />
-                <img
-                  className='ml-[6%] w-[23%] h-[23%] rounded-fullq'
-                  src="./2.png"
-                />
-
-                <img
-                  className='ml-[5%] w-[23%] h-[23%] rounded-full'
-                  src="./4.png"
-                />
-                <img
-                  className='-ml-[51%] w-[23%] h-[23%] mt-[25.7%] rounded-full'
-                  src="./3.png"
-                />
-                <img
-                  className=' ml-[5%] w-[23%] h-[23%] mt-[25.7%] rounded-full animate-spin-slow'
-                  src="./1.png"
-                />
-          </div>
-
-          <div className='bg-gray-800 bg-opacity-50 backdrop-blur-sm w-[100%] min-h-[150px] max-h-[500px] rounded-3xl mt-2'>
-                <p className='p-4 overflow-auto font-sans subpixel-antialiased font-light md:text-[18px] sm:text-[18px] xs:text-[13.0px] max-h-[150px]'>I am a storyteller turned developer who strives to create 
-                compelling Websites and designs for corporations. Coupled with my passion for Data Science and Sociology,
-                I am able to create efficient data driven solutions that are visual aid to a corporation's philosophies 
-                and best practices.
-                </p>
-          </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
+<div className='text-left px-6'>
+<div class="-mt-[0px] formatter3 mobile rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-clip-border text-gray-700 shadow-md">
+  <div className='pl-6 pt-8'>
+  <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-[#cba787]'></img>
+  </div>
+  <div class="p-6">
+    <h5 class="pb-6 mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+     Meet the Developer
+    </h5>
+    <p class="justify-start float-left block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+    Michael Musa is a freelance software 
+        developer based in Houston, TX. His pursuit of user-centric design and development processes is 
+        founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
+        as a primary landscape.  <span className='block mt-6'>In essence, Musa is a storyteller turned developer who strives to create compelling applications 
+        and designs for corporations. Coupling his knowledge in the realm of Web Development with his 
+        passion for Data Science and Sociology, Musa aims to create efficient, data-driven solutions that 
+        are a visual aid to a corporation's philosophies and best practices. </span>
+    </p>
+  </div>
+  <div class="p-6">
+    <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-[#cba787] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+      Read More
+    </button>
+  </div>
+  <div className='pt-6'>
+  </div>
+</div>
 </div>
 
 
 
 
 
-<div className="lg:w-[50%] article mockup-browser bg-base-300 max-w-[800px] max-h-[800px] min-w-[600px] min-h-[370px]  lg:float-right xs:scale-[88%] bg-opacity-[55%] backdrop-blur-sm">
+<div id='about' className="lg:w-[50%] article mockup-browser bg-base-300 max-w-[800px] max-h-[800px] min-w-[600px] min-h-[370px]  lg:float-right xs:scale-[88%] bg-opacity-[55%] backdrop-blur-sm">
   {/* <div className="mockup-browser-toolbar">
     <div className="input">https://michaelkmusa.com</div>
   </div> */}
