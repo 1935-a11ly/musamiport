@@ -247,19 +247,19 @@ function App() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px] max-h-[1000px]">
               <li className=" my-8 uppercase">
-                <a href="#bio">About</a>
+                <a href="#bio" onClick={() => setIsNavOpen(false)}>About</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="#projects">Projects</a>
+                <a href="#projects" onClick={() => setIsNavOpen(false)}>Projects</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="#experiences">Experiences</a>
+                <a href="#experiences" onClick={() => setIsNavOpen(false)}>Experiences</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={() => setIsNavOpen(false)}>Contact</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="#ai">Mus.AI</a>
+                <a href="#ai" onClick={() => setIsNavOpen(false)}>Mus.AI</a>
               </li>
             </ul>
           </div>
@@ -375,8 +375,6 @@ function App() {
 
 <div id='tops' className='major lg:h-[1650px] md:h-[1650px] sm:h-[1650px] xs:h-[1650px] bg-[#dbe3e4]'>
 <div className='pt-0 -pb-[25%] '>
-{/* <div id = 'bio' className='pt-2 pb-4 bg-black w-[75%] formatter3 rounded-3xl backdrop-blur-sm bg-opacity-[30%] md:scale-75 sm:scale-[60%] xs:scale-[60%]'> */}
-{/* <div id = 'bio' class="bg-black h-[700px] scale-[60%] formatter3 rounded-bl-full rounded-br-full backdrop-blur-sm bg-opacity-[30%]"> */}
 <h4 className="formatter3 pt-32">
     <span className='craft z-0 text-white drop-shadow-2xl'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='-mt-[15%] scale-[60%]'/></span>
 </h4>
@@ -384,8 +382,8 @@ function App() {
   <span className=' text-white craft md:text-[100px] sm:text-[100px] xs:text-[85px]'>WORLDS</span>
 </h4>
 <div className='lg:scale-100 md:scale-[70%] sm:scale-[60%] xs:scale-[60%] lg:mt-0 md:mt-[20px] sm:mt-[25px]  xs:mt-[95px] sm:mr-[0px] xs:mr-[27%] md:block sm:hidden xs:hidden'>
-<div id = 'bio' class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:block sm:hidden xs:hidden">
-<video id = 'bio' src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%]'/>  
+<div class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:block sm:hidden xs:hidden">
+<video src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%]'/>  
 </div>
 </div>
 
@@ -397,7 +395,6 @@ function App() {
 </div>
 
 
-{/* <h1 id = 'bio' className='formatter1 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white lg:mb-14 sm:mb-8 xs-mb-4 '>More About Me.</h1> */}
 
 </div>
 
@@ -410,7 +407,7 @@ function App() {
 
 {/* mobile stuff only */}
 
-<div className='text-left px-6 '>
+<div id='bio' className='text-left px-6 '>
 <div class="-mt-[92px] formatter3 mobile lg:mt-[50px] md:mt-[0px] sm:mt-[0px] xs:mt-[0px] rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-opacity-[25%] bg-clip-border text-gray-700 shadow-md backdrop-blur-sm">
   <div className='pl-6 pt-8'>
   <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-black'></img>
