@@ -247,19 +247,19 @@ function App() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px] max-h-[1000px]">
               <li className=" my-8 uppercase">
-                <a href="/about">About</a>
+                <a href="#about">About</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="/projects">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="/experiences">Experiences</a>
+                <a href="#experiences">Experiences</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="/contact">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
               <li className=" my-8 uppercase">
-                <a href="/ai">Mus.AI</a>
+                <a href="#ai">Mus.AI</a>
               </li>
             </ul>
           </div>
