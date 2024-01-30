@@ -134,47 +134,7 @@ function App() {
 
   return (
     <>
-    {/* <div className='float-left text-xl font-sans'>Musa.</div> */}
-    <div className='cursor-fancy sm:min-w-[100%] xs:min-w-[100%]'>
-    {/* <div className="btm-nav overlay lg:hidden sm:inline-flex rounded-full scale-[90%] backdrop-blur-sm bg-opacity-[85%]">
-  <button>
-    <a href='#about'>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-    </svg>  
-    </a>
-  </button>
-  <button>
-    <a href='#projects'>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-      </svg>  
-    </a>
-  </button>
-  <button>
-    <a href='#experiences'>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
-      </svg> 
-    </a>
-  </button>
-  <button>
-    <a href='#contact'>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-      </svg> 
-    </a>   
-  </button>
-  <button>
-    <a href='#ai'>
-      <div className="spinner w-4 h-4">
-        <div className="spinner1 w-4 h-4"></div>
-      </div>  
-    </a>
-  </button>
-</div> */}
-
-
+    <div className='cursor-fancy'>
     <div className='d1image'>
     <div className='formatter1'>
     <div>
@@ -386,28 +346,28 @@ function App() {
 
 
 
-<div id='about' className="lg:w-[50%] article mockup-browser bg-base-300 max-w-[800px] max-h-[800px] min-w-[600px] min-h-[370px]  lg:float-right xs:scale-[88%] bg-opacity-[55%] backdrop-blur-sm">
+<div id='about' className="lg:w-[50%] article mockup-browser bg-black max-w-[800px] max-h-[800px] min-w-[600px] min-h-[370px]  lg:float-right xs:scale-[88%] bg-opacity-[50%] backdrop-blur-sm">
   {/* <div className="mockup-browser-toolbar">
     <div className="input">https://michaelkmusa.com</div>
   </div> */}
   <div className="mockup-browser-toolbar">
-      <svg viewBox="0 0 24 24" fill="currentColor" className="-ml-[68.5px] mr-[9px] h-[12px] w-4 text-red-500/20 z-40">
+      <svg viewBox="0 0 24 24" fill="currentColor" className="-ml-[68.5px] mr-[9px] h-[12px] w-4 text-red-500 z-40">
         <circle r="12" cy="12" cx="12"></circle>
       </svg>
-      <svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.65 mr-2.5 h-3 w-3 text-yellow-500/20 bg-yellow z-40">
+      <svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.65 mr-2.5 h-3 w-3 text-yellow-500 bg-yellow z-40">
         <circle r="12" cy="12" cx="12"></circle>
       </svg>
-      <svg viewBox="0 0 24 24" fill="currentColor" className="mr-1.5 h-3 w-3 text-green-500/20 z-40">
+      <svg viewBox="0 0 24 24" fill="currentColor" className="mr-1.5 h-3 w-3 text-green-500 z-40">
         <circle r="12" cy="12" cx="12"></circle>
       </svg>
-      <div className="input bg-opacity-20">https://michaelkmusa.com</div>
+      <div className="input bg-black">https://michaelkmusa.com</div>
       {/* possibly add the react typed there when doing animations */}
   </div>
   <div className="px-0 md:py-0 sm:py-0 xs:py-0 transparent bg-opacity-[10%] -pb-[50px]">
   
   <img src="./booklogo.png" className='scale-[50%] -mt-[10%]'></img>
-  <div className='bg-base-300 -mt-[40%] py-[40%] bg-opacity-[55%]'>
-  <h3 className='text-center text-[20px] -mt-[10%] pb-2'>Crafting Digital Worlds: Meet the Architect of this Online Experiences
+  <div className='bg-black -mt-[40%] py-[40%] bg-opacity-[50%]'>
+  <h3 className='text-center text-[20px] -mt-[10%] pb-2 text-zinc-50 opacity-[80%]'>Crafting Digital Worlds: Meet the Architect of this Online Experiences
 </h3>
   <div className='-mt-[18%] book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
         <div className='overflow-y-auto p-12 text-black md:h-[700px] sm:h-[500px] xs:h-[500px]'>

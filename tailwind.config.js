@@ -29,6 +29,12 @@ export default {
           loader: 'babel-loader'
         }
       }
-    ]
-  }  
+    ],
+    exports : {
+      daisyui: {
+        themes: ["dark"],
+      },
+    }
+  } 
+
 }
