@@ -76,20 +76,24 @@ html, body {
 stroke-dasharray: 1850 2000;
 stroke-dashoffset: 1851;
 transition: 3.5s linear;
+transition-delay: 1s;
 }
 .path-2 {
 stroke-dasharray: 260 1000;
 stroke-dashoffset: 261;
 transition: 1.2s linear 3.7s;
+transition-delay: 4.7s;
 }
 .path-3 {
 stroke-dasharray: 100 1000;
 stroke-dashoffset: 101;
 transition: 1s linear 5.0s;
+transition-delay: 6s;
 }
 .path-4 {
 stroke-width: 0;
 transition: 0.1s linear 5.0s;
+transition-delay: 6s;
 }
 
 .d1image {
@@ -276,6 +280,9 @@ p{
   }
   .frame2{
     display: none;  
+  }
+  .browser{
+    display: none !important;
   }
 
 }
@@ -465,4 +472,3 @@ h1{
   }
 
 }
-

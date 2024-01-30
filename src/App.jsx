@@ -133,16 +133,13 @@ function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
+    
     <>
-    <div className='cursor-fancy'>
+
+    <div id='pur' className='cursor-fancy'>
     <div className='d1image'>
     <div className='formatter1'>
     <div>
-
-
-
-
-
 
   <div className="formatter3 scale-[94%] md:block sm:hidden xs:hidden">
     <div className='formatter3 bg-black bg-opacity-[55%] p-[10px] rounded-2xl max-w-[590px] min-w-[350px] h-[56px]'>
