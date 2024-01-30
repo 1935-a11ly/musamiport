@@ -10,6 +10,11 @@ body {
   cursor: url('../book1.png'), auto !important;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .formatter1 {
   max-width: 1280px;
   margin: 0 auto;
@@ -437,16 +442,4 @@ h1{
 		height: 300px;
 		width: 250px;
 	}
-}
-
-.elementToFadeInAndOut {
-    opacity: 1;
-    animation: fade 2s linear;
-    animation-delay: 8s;
-}
-
-
-@keyframes fade {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
 }

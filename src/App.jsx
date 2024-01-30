@@ -135,8 +135,8 @@ function App() {
   return (
     <>
     {/* <div className='float-left text-xl font-sans'>Musa.</div> */}
-    <div className='cursor-fancy'>
-    <div className="btm-nav overlay lg:hidden sm:inline-flex rounded-full scale-[90%] backdrop-blur-sm bg-opacity-[85%]">
+    <div className='cursor-fancy sm:min-w-[100%] xs:min-w-[100%]'>
+    {/* <div className="btm-nav overlay lg:hidden sm:inline-flex rounded-full scale-[90%] backdrop-blur-sm bg-opacity-[85%]">
   <button>
     <a href='#about'>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
@@ -172,7 +172,7 @@ function App() {
       </div>  
     </a>
   </button>
-</div>
+</div> */}
 
 
     <div className='d1image'>
@@ -220,25 +220,6 @@ function App() {
     </a>
   </li>
 </ul>
-    {/* <div className='flex items-center justify-center text-center text-lg font-sans bg-slate-200 rounded-full bg-opacity-40'>
-  <a className='hidden md:block flex-1 hover:text-blue-500 text-black transition ease-in-out hover:bg-white hover:rounded-full ...' href={'/'}>
-    About
-  </a>
-  <a className='hidden lg:block flex-1 hover:text-blue-500 text-black transition ease-in-out hover:bg-white hover:rounded-full ...' href={'/'}>
-    Experiences
-  </a>
-  <a className='hidden md:block flex-1 hover:text-blue-500 text-black transition ease-in-out hover:bg-white hover:rounded-full ...' href={'/'}>
-    Appearances
-  </a>
-  <a className='hidden md:block flex-1 hover:text-blue-500 text-black transition ease-in-out hover:bg-white hover:rounded-full ...' href={'/'}>
-    Projects
-  </a>
-  <button className='lg:hidden md:hidden sm:block'>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 animate-pulse">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-    </svg>
-  </button>
-</div> */}
 <div className=''>
     <div className='py-0 px-0 text-5xl'>
       <div className='scale-75'><span id="container" className='pt-10'>
@@ -952,7 +933,7 @@ height='70%'
 className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 min-w-[300px] max-w-[1000px] xs:pl-[15px] xs:pt-24 md:hidden'
 frameborder="0"
 ></iframe>
-<div class="mt-32 relative max-h-[500px] min-h-[420px] formatter3 min-w-[700px] max-w-[700px] object-scale-down lg:scale-[100%] md:scale-[70%] sm:scale-[50%] mx-auto bg-[#343434] rounded-xl bg-opacity-[5%]">
+<div class="mt-32 relative max-h-[500px] min-h-[420px] formatter3 min-w-[700px] max-w-[700px] object-scale-down lg:scale-[100%] md:scale-[70%] sm:scale-[50%] mx-auto bg-[#343434] rounded-xl bg-opacity-[5%] md:block sm:hidden xs:hidden">
   <div class="flex items-center p-3">
     <div class="px-1">
       <span class="w-[10px] h-[10px] rounded-full inline-block bg-red-500 cursor-pointer"></span>
@@ -1003,14 +984,14 @@ frameborder="0"
 
 
 
-<div className="slider2 bg-transparent w-full -mt-0 lg:block md:hidden sm:hidden xs:hidden">
+<div className="slider2 bg-transparent w-full lg:block md:hidden sm:hidden xs:hidden">
 	<div className="slide-track2 bg-transparent">
 		<div className="slide2">
       <div className="border-[1px] border-[#dddddf] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm ">
         <div className="flex gap-2">
           <img alt="" src= './reactlogo.png' className="bg-base-300 w-24 h-24 shrink-0 rounded-full object-contain" />
           <div className="flex flex-col text-white">
-            <span className="universalfont text-[25px]">REACT</span>
+            <span className="universalfont text-[25px] text-white">REACT</span>
             <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
               3 YEARS
             </p>
@@ -1503,7 +1484,7 @@ frameborder="0"
     <div className="border-[1px] border-[#dddddf] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
         <div className="flex gap-2">
           <img src= './flasklogo.png' alt="" className="invert bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
-          <div className="flex flex-col text-black">
+          <div className="flex flex-col text-white">
             <span className="universalfont text-[25px]">FLASK</span>
             <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
               4 YEARS
@@ -1516,7 +1497,7 @@ frameborder="0"
     <div className="border-[1px] border-[#dddddf] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
         <div className="flex gap-2">
           <img src= './csslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
-          <div className="flex flex-col text-black">
+          <div className="flex flex-col text-white">
             <span className="universalfont text-[25px]">CSS</span>
             <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
               4 YEARS
@@ -1529,7 +1510,7 @@ frameborder="0"
     <div className="border-[1px] border-[#dddddf] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
         <div className="flex gap-2">
           <img src= './pandaslogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
-          <div className="flex flex-col text-black">
+          <div className="flex flex-col text-white">
             <span className="universalfont text-[25px]">PANDAS</span>
             <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
               2.5 YEARS
@@ -1542,7 +1523,7 @@ frameborder="0"
     <div className="border-[1px] border-[#dddddf] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm">
         <div className="flex gap-2">
           <img src= './htmllogo.png' alt="" className="bg-transparent w-24 h-24 shrink-0 rounded-full object-contain" />
-          <div className="flex flex-col text-black">
+          <div className="flex flex-col text-white">
             <span className="universalfont text-[25px]">HTML</span>
             <p className="line-clamp-3 font-bold text-[#cba787] text-[18px] bg-base-300 rounded-lg p-2 text-center">
               5 YEARS

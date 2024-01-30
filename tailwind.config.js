@@ -12,7 +12,7 @@ export default {
       }
       ,
       cursor: {
-        'fancy': 'url(./cursor.png), pointer',
+        'fancy': 'pointer',
       }
     },
   },
