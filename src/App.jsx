@@ -130,7 +130,7 @@ function App() {
     isListening ? stopVoiceInput(): startListening()
   }
 
-
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <>
@@ -138,48 +138,145 @@ function App() {
     <div className='d1image'>
     <div className='formatter1'>
     <div>
-    <ul className="menu bg-base-200 lg:menu-horizontal rounded-box bg-opacity-90 lg:inline-flex sm:hidden xs:hidden">
-  <li>
+
+
+
+
+
+
+  <div className="formatter3 scale-[94%] md:block sm:hidden xs:hidden">
+    <div className='formatter3 bg-black bg-opacity-[55%] p-[10px] rounded-2xl max-w-[590px] min-w-[350px] h-[56px]'>
     <a href='#about'>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+    <button className='tab text-[15px] text-white opacity-[80%]'>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 pr-2">
       <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
+      <span className='md:block sm:hidden xs:hidden'>
       About
+      </span>
+    </button>
     </a>
-  </li>
-  <li>
+
+
     <a href='#projects'>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+    <button className='tab text-[15px] text-white opacity-[80%]'>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 pr-2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
     </svg>
+      <span className='md:block sm:hidden xs:hidden'>
       Projects
+      </span>
+    </button>
     </a>
-  </li>
-  <li>
+
     <a href='#experiences'>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+      <button className='tab text-[15px] text-white opacity-[80%]'>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 pr-2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
       </svg>
+      <span className='md:block sm:hidden xs:hidden'>
       Experiences
+      </span>
+      </button>
     </a>
-  </li>
-  <li>
+
     <a href='#contact'>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+    <button className='tab text-[15px] text-white opacity-[80%]' >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 pr-2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
     </svg>
+      <span className='md:block sm:hidden xs:hidden'>
       Contact
+      </span>
+      </button>
     </a>
-  </li>
-  <li>
+
     <a href='#ai'>
-      <div className="spinner w-4 h-4">
-        <div className="spinner1 w-4 h-4"></div>
+      <button className='tab text-[15px] text-white opacity-[80%]'>
+      <div className="spinner w-7 h-7 mr-2">
+        <div className="spinner1 w-7 h-7 mr-2"></div>
       </div>
-      Mus.AI
+      <span className='md:block sm:hidden xs:hidden'>
+      AI
+      </span>
+      </button>
     </a>
-  </li>
-</ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div className="hamburger min-w-full flex items-center justify-between py-8 -mt-4">
+      <a href="/">
+      </a>
+      <nav>
+        <section className="flex lg:hidden">
+          <div
+            className="space-y-2"
+            onClick={() => setIsNavOpen((prev) => !prev)}
+          >
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>
+          </div>
+
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div
+              className="absolute top-0 right-0 px-8 py-8"
+              onClick={() => setIsNavOpen(false)}
+            >
+              <svg
+                className="h-8 w-8 text-gray-200 animate-pulse"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <ul className="flex flex-col items-center justify-between min-h-[250px] max-h-[1000px]">
+              <li className=" my-8 uppercase">
+                <a href="/about">About</a>
+              </li>
+              <li className=" my-8 uppercase">
+                <a href="/projects">Projects</a>
+              </li>
+              <li className=" my-8 uppercase">
+                <a href="/experiences">Experiences</a>
+              </li>
+              <li className=" my-8 uppercase">
+                <a href="/contact">Contact</a>
+              </li>
+              <li className=" my-8 uppercase">
+                <a href="/ai">Mus.AI</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 <div className=''>
     <div className='py-0 px-0 text-5xl'>
       <div className='scale-75'><span id="container" className='pt-10'>
@@ -235,7 +332,7 @@ function App() {
 </div>
 <div className='py-10 px-4 text-3xl scroll-smooth'>
   <div className='items-center'>
-    <div className='xl:bg-black xl:bg-opacity-[40%] backdrop-blur-sm rounded-3xl w-fit xl:float-left'>
+    <div className='xl:bg-black xl:bg-opacity-[40%] xl:backdrop-blur-sm rounded-3xl w-fit xl:float-left'>
       <img
         src={imageSources[currentImageIndex]} // Replace with the actual image source
         alt="Image Description"
