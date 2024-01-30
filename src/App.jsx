@@ -243,19 +243,19 @@ function App() {
               </svg>
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px] max-h-[1000px]">
-              <li className=" my-8 uppercase">
+              <li className=" my-8 uppercase text-white opacity-[80%]">
                 <a href="#bio" onClick={() => setIsNavOpen(false)}>About</a>
               </li>
-              <li className=" my-8 uppercase">
+              <li className=" my-8 uppercase text-white opacity-[80%]">
                 <a href="#projects" onClick={() => setIsNavOpen(false)}>Projects</a>
               </li>
-              <li className=" my-8 uppercase">
+              <li className=" my-8 uppercase text-white opacity-[80%]">
                 <a href="#experiences" onClick={() => setIsNavOpen(false)}>Experiences</a>
               </li>
-              <li className=" my-8 uppercase">
+              <li className=" my-8 uppercase text-white opacity-[80%]">
                 <a href="#contact" onClick={() => setIsNavOpen(false)}>Contact</a>
               </li>
-              <li className=" my-8 uppercase">
+              <li className=" my-8 uppercase text-white opacity-[80%]">
                 <a href="#ai" onClick={() => setIsNavOpen(false)}>Mus.AI</a>
               </li>
             </ul>
