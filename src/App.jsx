@@ -990,8 +990,8 @@ height='70%'
 className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 min-w-[300px] max-w-[1000px] xs:pl-[15px] xs:pt-24 md:hidden'
 frameborder="0"
 ></iframe>
-<div class="mt-32 relative max-h-[500px] min-h-[420px] formatter3 min-w-[700px] max-w-[700px] object-scale-down lg:scale-[100%] md:scale-[70%] sm:scale-[50%] mx-auto bg-[#343434] rounded-xl bg-opacity-[5%] md:block sm:hidden xs:hidden">
-  <div class="flex items-center p-3">
+<div class="browser mt-32 relative max-h-[500px] min-h-[420px] formatter3 min-w-[700px] max-w-[700px] object-scale-down lg:scale-[100%] md:scale-[100%] sm:scale-[80%] xs:scale-[100%] mx-auto bg-[#343434] rounded-xl bg-opacity-[5%]">
+  <div class="brow flex items-center p-3">
     <div class="px-1">
       <span class="w-[10px] h-[10px] rounded-full inline-block bg-red-500 cursor-pointer"></span>
     </div>
@@ -1006,7 +1006,7 @@ frameborder="0"
     src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
     width="50%"
     height='70%'
-    className='frame2 -mt-[5px] rounded-xl relative max-h-[340px] min-h-[340px] formatter3 min-w-[650px] max-w-[650px] object-scale-down lg:scale-[100%] md:scale-[70%] sm:scale-[50%]'
+    className='frame2 -mt-[5px] rounded-xl relative max-h-[340px] min-h-[340px] formatter3 min-w-[650px] max-w-[650px] object-scale-down lg:scale-[100%] md:scale-[100%] sm:scale-[95%]'
     frameborder="0"
     ></iframe>
 </div>

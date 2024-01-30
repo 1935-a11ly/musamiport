@@ -260,24 +260,6 @@ p{
   }
 }
 
-@media screen and (max-width: 1144px) and (min-width: 658px) {
-  .framee{
-    display: block !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    height: 500px;
-  }
-  .frame2{
-    display: none;  
-  }
-  .bubble{
-    display: block;
-  }
-  .backdrop1{
-    display: none !important;
-  }
-}
-
 @media (max-width: 657px) {
   .backdropp{
     height: 1100px;
@@ -468,3 +450,19 @@ h1{
     display: none !important;
   }
 }
+
+@media screen and (max-width: 1144px) and (min-width: 658px) {
+  .framee {
+    display: none !important;
+  }
+  .browser{
+    display: block !important;
+    margin-bottom: 80px;
+    background-color: #101010 !important;
+  }
+  .frame2{
+    display: block !important;
+  }
+
+}
+
