@@ -341,9 +341,19 @@ h1{
   .article{
     display: none !important;
   }
+  .mob1{
+    display: none !important;
+  }
+  .major{
+    background-color: black !important;
+    background-image: none !important;
+  }
+  .major:before{
+    display: none;
+  }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .mobile {
     display: none !important;
   }

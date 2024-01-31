@@ -375,8 +375,8 @@ function App() {
 
 {/* removed major class to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[1650px] md:h-[1650px] sm:h-[1650px] xs:h-[1650px] bg-[#dbe3e4]'>
-<div className='pt-0 -pb-[25%] '>
+<div id='tops' className='major lg:h-[1650px] md:h-[1650px] sm:h-[1650px] xs:h-[1410px] bg-[#dbe3e4]'>
+<div className='mob1 pt-0 -pb-[25%] '>
 <h4 className="formatter3 pt-32">
     <span className='craft z-0 text-white drop-shadow-2xl'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='-mt-[15%] scale-[60%]'/></span>
 </h4>
@@ -400,7 +400,7 @@ function App() {
 
 </div>
 
-<div className='pb-12 pt-32 mt-0'>
+<div className='mob2 pb-12 pt-32 mt-0'>
 <video src="./test1.mp4" autoPlay muted loop className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
@@ -409,16 +409,18 @@ function App() {
 
 {/* mobile stuff only */}
 
-<div id='bio' className='text-left px-6 '>
-<div class="-mt-[92px] formatter3 mobile lg:mt-[50px] md:mt-[0px] sm:mt-[0px] xs:mt-[0px] rounded-2xl text-left relative flex max-w-[750px] min-w-[330px] h-fit flex-col bg-zinc-50 bg-opacity-[25%] bg-clip-border text-gray-700 shadow-md backdrop-blur-sm">
-  <div className='pl-6 pt-8'>
-  <img src = './avatar1.png' className='w-32 h-32 rounded-full object-contain bg-black'></img>
+<div id='bio' className='text-left px-0 -mt-[129px] xs:-pb-[500px]'>
+<div class=" formatter3 mobile text-left w-full h-fit">
+<img src='./mobilehero.png' className='top-0 w-[100%] sm:aspect-video xs:aspect-square object-cover z-40'></img>
+<p className='sm:text-5xl xs:text-3xl formatter3 px-4 pt-12'> CRAFTING DIGITAL TALES</p>
+  <div className='pl-0 pt-8'>
+  <img src = './avatar1.png' className='w-32 h-32 rounded-full formatter3 object-contain bg-white'></img>
   </div>
-  <div class="p-6">
-    <h5 class="pb-6 mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+  <div class="sm:px-16 xs:px-4">
+    <h5 class="pb-6 mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased pt-20">
      Meet the Developer
     </h5>
-    <p class="justify-start float-left block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+    <p class="justify-start float-left block font-sans text-base font-light leading-relaxed text-inherit antialiased sm:text-3xl xs:text-xl">
     Michael Musa is a freelance software 
         developer based in Houston, TX. His pursuit of user-centric design and development processes is 
         founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
@@ -429,9 +431,6 @@ function App() {
     </p>
   </div>
   <div class="p-6">
-    <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-[#cba787] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-      Read More
-    </button>
   </div>
   <div className='pt-6'>
   </div>
