@@ -59,18 +59,19 @@ function App() {
     const imageInterval = setInterval(() => {
       // Start with a fade-out effect
       setImageOpacity(0);
-
-      // Wait for a brief moment before changing the image source
+  
+      // Wait for the fade-out effect to complete before changing the image source
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageSources.length);
-      }, 2000);
-
-      // After changing the image source, set the opacity to 1 for a fade-in effect
+      }, 1000);
+  
+      // After changing the image source, set a delay before starting the fade-in effect
       setTimeout(() => {
+        // Set the opacity to 1 for a fade-in effect
         setImageOpacity(1);
-      }, 2100);
+      }, 1200);
     }, 8000);
-
+  
     return () => {
       clearInterval(imageInterval);
     };
