@@ -132,6 +132,29 @@ function App() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  useEffect(() => {
+    const blurElements = ['blr', 'tops', 'vanta'];
+
+    const applyBlurToElements = (blurValue) => {
+      blurElements.forEach((elementId) => {
+        const element = document.getElementById(elementId);
+        if (isNavOpen) {
+          element.style.display = `none`;
+        }
+        else{
+          element.style.display = `block`;
+        }
+      });
+    };
+    applyBlurToElements();
+
+  }, [isNavOpen]);
+
+  const toggleNav = () => {
+    // Toggle the navigation state
+    setIsNavOpen((prev) => !prev);
+  };
+
   return (
     
     <>
@@ -202,14 +225,6 @@ function App() {
 </div>
 
 
-
-
-
-
-
-
-
-
 <div className="hamburger min-w-full flex items-center justify-between py-8 -mt-4">
       <a href="/">
       </a>
@@ -217,7 +232,7 @@ function App() {
         <section className="flex lg:hidden">
           <div
             className="space-y-2"
-            onClick={() => setIsNavOpen((prev) => !prev)}
+            onClick={toggleNav}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>
@@ -264,17 +279,7 @@ function App() {
       </nav>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-<div className=''>
+<div id = 'blr' className=''>
     <div className='py-0 px-0 text-5xl'>
       <div className='scale-75'><span id="container" className='pt-10'>
     <svg id="hello-svg" data-name="hello" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582 197" className='invert opacity-[50%] pt-10'>
