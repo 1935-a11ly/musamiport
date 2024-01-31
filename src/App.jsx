@@ -346,10 +346,10 @@ function App() {
         }}
       />
     </div>
-    <div className='banner p-8 md:text-xl sm:text-base xs:text-base text-white font-sans max-w-4xl min-w-sm text-left xl:float-right bg-black rounded-3xl bg-opacity-[40%] backdrop-blur-sm'>
+    <div className='banner p-8 md:text-xl sm:text-base xs:text-base text-white font-sans max-w-4xl min-w-sm text-left xl:float-right bg-black rounded-3xl bg-opacity-[40%] backdrop-blur-sm '>
     I am a passionate frontend developer and dedicated software engineer, 
     always excited to embark on new coding adventures. 
-    <span className='md:inline sm:hidden xs:hidden'>With a keen eye for user-centric design and a love for crafting elegant, efficient solutions,
+    <span className='lg:inline md:hidden sm:hidden xs:hidden'>With a keen eye for user-centric design and a love for crafting elegant, efficient solutions,
     I thrive in the dynamic world of web development.</span> I enjoy translating creative ideas into pixel-perfect, interactive web applications, 
     continuously learning and growing to stay at the forefront of technology.
     </div>

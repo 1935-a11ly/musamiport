@@ -489,3 +489,9 @@ h1{
   }
 
 }
+
+@media screen and (max-width: 1279px) and (min-width: 1023px) {
+  .d1image {
+    height: 1350px !important;
+  }
+}
