@@ -134,7 +134,7 @@ function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
-    const blurElements = ['blr', 'tops', 'vanta'];
+    const blurElements = ['blr', 'tops', 'vanta', 'burgerr'];
 
     const applyBlurToElements = (blurValue) => {
       blurElements.forEach((elementId) => {
@@ -232,8 +232,9 @@ function App() {
       <nav>
         <section className="flex lg:hidden">
           <div
+            id = "burgerr"
             className="space-y-2"
-            onClick={toggleNav}
+            onClick={() => { toggleNav(); setIsNavOpen(true); }}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-200"></span>

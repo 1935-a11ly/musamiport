@@ -440,7 +440,7 @@ h1{
 }
 
 .hideMenuNav {
-  display: none;
+  display: none !important;
 }
 .showMenuNav {
   display: block;
