@@ -414,7 +414,7 @@ function App() {
 <div id='bio' className='text-left px-0 -mt-[129px] xs:-pb-[500px]'>
 <div className=" formatter3 mobile text-left w-full h-fit">
 <img src='./mobilehero.png' className='top-0 w-[100%] sm:aspect-video xs:aspect-square object-cover z-40'></img>
-<p className='sm:text-5xl xs:text-3xl formatter3 px-4 pt-12'> CRAFTING DIGITAL TALES</p>
+<p className='sm:text-5xl xs:text-3xl formatter3 px-4 pt-12'> CRAFTING DIGITAL WORLDS</p>
   <div className='pl-0 pt-8'>
   <img src = './avatar1.png' className='w-32 h-32 rounded-full formatter3 object-contain bg-white'></img>
   </div>
