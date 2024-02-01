@@ -13,7 +13,7 @@ import useSpeechToText from './test.jsx';
 function App() {
   useEffect(() => {
     function animationStart() {
-      // Assuming you have an element with the id 'container' and want to add the 'fin' class to it
+      // Assuming you have an element with the id 'container' and want to add the 'fin' className to it
       const container = document.getElementById('container');
       if (container) {
         container.classList.add('fin');
@@ -285,25 +285,25 @@ function App() {
       <div className='scale-75'><span id="container" className='pt-10'>
     <svg id="hello-svg" data-name="hello" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582 197" className='invert opacity-[50%] pt-10'>
         <title>Hello</title>
-        <path class="path path-1" d="M208,338c38-16.67,73.74-45.72,97.33-66,21.33-18.33,32.67-35.67,37.33-52.67C347.12,203.12,344,192,332,192c-11,0-21,10.33-24.94,27.68-4.52,19.89-22.06,107.82-29.39,149,15.67-72.33,36.33-81.33,53.67-81.33,22.33,0,24.67,18.67,19.42,39-5.43,21.07-7.42,44.32,17.91,44.32,18,0,35.53-8.17,52.67-20,14-9.67,23-24,23-40,0-13.42-8-23.33-20.67-23.33s-24.33,12-24.33,33.33c0,27,16.33,48,44,48,25.67,0,47.67-19.67,62-44.67,13.61-23.74,30.67-64.67,33.33-92.67s-5.33-36-18.67-36-24.67,17.33-28.67,43.33S486,302,491.33,330s28,37.67,46,37.67,38.17-15.67,52-37c16.54-25.51,35.87-67.45,38.67-102,2-24.67-8.67-33.33-20-33.33-14.67,0-23.33,13.33-28,38-4.5,23.81-8,64-2,94,4.64,23.21,25.33,40.33,44.67,40.33s32.67-19,36.67-42.33" transform="translate(-199 -183)"/>
-        <path class="path path-2" d="M697.33,287.33C672,287.33,661.33,305,659,327c-2.81,26.54,10.33,41.67,29.67,41.67,22,0,34.54-20.78,36.67-40.67,2-18.67-7.39-39.13-28-40.67" transform="translate(-199 -183)"/>
-        <path class="path path-3" d="M714.8,295.12c12.11,12.26,43.53,9.55,56.53-5.79" transform="translate(-199 -183)"/>
-        <line class="path path-4" x1="561" y1="181.67" x2="561" y2="181.67"/>
+        <path className="path path-1" d="M208,338c38-16.67,73.74-45.72,97.33-66,21.33-18.33,32.67-35.67,37.33-52.67C347.12,203.12,344,192,332,192c-11,0-21,10.33-24.94,27.68-4.52,19.89-22.06,107.82-29.39,149,15.67-72.33,36.33-81.33,53.67-81.33,22.33,0,24.67,18.67,19.42,39-5.43,21.07-7.42,44.32,17.91,44.32,18,0,35.53-8.17,52.67-20,14-9.67,23-24,23-40,0-13.42-8-23.33-20.67-23.33s-24.33,12-24.33,33.33c0,27,16.33,48,44,48,25.67,0,47.67-19.67,62-44.67,13.61-23.74,30.67-64.67,33.33-92.67s-5.33-36-18.67-36-24.67,17.33-28.67,43.33S486,302,491.33,330s28,37.67,46,37.67,38.17-15.67,52-37c16.54-25.51,35.87-67.45,38.67-102,2-24.67-8.67-33.33-20-33.33-14.67,0-23.33,13.33-28,38-4.5,23.81-8,64-2,94,4.64,23.21,25.33,40.33,44.67,40.33s32.67-19,36.67-42.33" transform="translate(-199 -183)"/>
+        <path className="path path-2" d="M697.33,287.33C672,287.33,661.33,305,659,327c-2.81,26.54,10.33,41.67,29.67,41.67,22,0,34.54-20.78,36.67-40.67,2-18.67-7.39-39.13-28-40.67" transform="translate(-199 -183)"/>
+        <path className="path path-3" d="M714.8,295.12c12.11,12.26,43.53,9.55,56.53-5.79" transform="translate(-199 -183)"/>
+        <line className="path path-4" x1="561" y1="181.67" x2="561" y2="181.67"/>
     </svg>
 </span></div>
     </div>
 
-<div className='text-[#303030] invert opacity-[100%] xs:pb-10 sm:pb-10 md:pb-17 pt-4 xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
+<div className='text-[#303030] invert opacity-[70%] xs:pb-10 sm:pb-10 md:pb-17 pt-4 xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
 
 <div className='pb-8 px-0 text-xl md:flex md:justify-center space-x-4'>
-<button class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full inline-flex flex-shrink-0 items-center bg-opacity-40">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" className='w-6 h-6 md:animate-none xs:animate-none'>
+<button className="bg-gray-300 text-gray-800 py-2 px-4 rounded-full inline-flex flex-shrink-0 items-center bg-opacity-40">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className='w-6 h-6 md:animate-none xs:animate-none'>
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
 </svg>
   <a className='px-2' href="./resume.pdf" download>Download Resume</a>
 </button>
 <div className='flex flex-wrap justify-center space-x-4 md:pt-0 sm:pt-8 xs:pt-8'>
-<button class="bg-gray-300 text-gray-800 py-2 px-3 rounded-full inline-flex items-center bg-opacity-40 hover:animate-bounce">
+<button className="bg-gray-300 text-gray-800 py-2 px-3 rounded-full inline-flex items-center bg-opacity-40 hover:animate-bounce">
   <a className='' href="https://github.com/1935-a11ly" target="_blank">
   <img
             src= './github.png'
@@ -312,7 +312,7 @@ function App() {
     />
   </a>
 </button>
-<button class="bg-gray-300 text-gray-800 py-2 px-4 rounded-full inline-flex items-center bg-opacity-40 hover:animate-bounce">
+<button className="bg-gray-300 text-gray-800 py-2 px-4 rounded-full inline-flex items-center bg-opacity-40 hover:animate-bounce">
   <a className='' href="https://www.linkedin.com/in/michaeltkmusa/" target="_blank">
   <img
                 src= './linkedin.png'
@@ -321,7 +321,7 @@ function App() {
     />
   </a>
 </button>
-<button class="bg-gray-300 text-gray-800 py-2 px-2 rounded-full inline-flex items-center bg-opacity-40 hover:animate-bounce">
+<button className="bg-gray-300 text-gray-800 py-2 px-2 rounded-full inline-flex items-center bg-opacity-40 hover:animate-bounce">
     
   <a className='' href="https://www.instagram.com/michaeltkmusa/" target="_blank">
   <img
@@ -333,9 +333,9 @@ function App() {
 </button>
 </div>
 </div>
-<div className='py-10 px-4 text-3xl scroll-smooth'>
+<div className='py-10 sm:px-4 xs:px-0 text-3xl scroll-smooth'>
   <div className='items-center'>
-    <div className='xl:bg-black xl:bg-opacity-[40%] xl:backdrop-blur-sm rounded-3xl w-fit xl:float-left'>
+    <div className='xl:bg-black xl:bg-opacity-[55%] xl:backdrop-blur-xl rounded-3xl w-fit xl:float-left'>
       <img
         src={imageSources[currentImageIndex]} // Replace with the actual image source
         alt="Image Description"
@@ -347,10 +347,10 @@ function App() {
         }}
       />
     </div>
-    <div className='banner p-8 md:text-xl sm:text-base xs:text-base text-white font-sans max-w-4xl min-w-sm text-left xl:float-right bg-black rounded-3xl bg-opacity-[40%] backdrop-blur-sm '>
+    <div className='banner sm:p-8 xs:p-8 md:text-xl sm:text-base xs:text-base text-white font-sans max-w-4xl min-w-[310px] text-left xl:float-right bg-black rounded-3xl bg-opacity-[55%] backdrop-blur-xl antialiased'>
     I am a passionate frontend developer and dedicated software engineer, 
     always excited to embark on new coding adventures. 
-    <span className='lg:inline md:hidden sm:hidden xs:hidden'>With a keen eye for user-centric design and a love for crafting elegant, efficient solutions,
+    <span className='lg:inline md:hidden sm:hidden xs:hidden antialiased font-sans'>With a keen eye for user-centric design and a love for crafting elegant, efficient solutions,
     I thrive in the dynamic world of web development.</span> I enjoy translating creative ideas into pixel-perfect, interactive web applications, 
     continuously learning and growing to stay at the forefront of technology.
     </div>
@@ -374,25 +374,25 @@ function App() {
 
 
 
-{/* removed major class to tops it had backdrop */}
+{/* removed major className to tops it had backdrop */}
 
 <div id='tops' className='major lg:h-[1650px] md:h-[1650px] sm:h-[1650px] xs:h-[1410px] bg-[#dbe3e4]'>
 <div className='mob1 pt-0 -pb-[25%] '>
 <h4 className="formatter3 pt-32">
-    <span className='craft z-0 text-white drop-shadow-2xl'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='-mt-[15%] scale-[60%]'/></span>
+    <span className='craft z-0 text-white drop-shadow-2xl antialiased opacity-[80%]'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='invert -mt-[15%] scale-[60%]'/></span>
 </h4>
 <h4 className="formatter3 md:-mt-[7%] md:pt-[3%] sm:pt-[0%]">
-  <span className=' text-white craft md:text-[100px] sm:text-[100px] xs:text-[85px]'>WORLDS</span>
+  <span className=' text-white craft md:text-[100px] sm:text-[100px] xs:text-[85px] antialiased opacity-[80%]'>WORLDS</span>
 </h4>
 <div className='lg:scale-100 md:scale-[70%] sm:scale-[60%] xs:scale-[60%] lg:mt-0 md:mt-[20px] sm:mt-[25px]  xs:mt-[95px] sm:mr-[0px] xs:mr-[27%] md:block sm:hidden xs:hidden'>
-<div class="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:block sm:hidden xs:hidden">
+<div className="bg-black h-[450px] w-[450px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:block sm:hidden xs:hidden">
 <video src="./earth1.mp4" autoPlay muted loop className='invert absolute bg-black h-[450px] w-[450px] rounded-full opacity-[100%]'/>  
 </div>
 </div>
 
 
 <div className='sm:scale-[70%] xs:scale-[60%] md:hidden pt-[40px]'>
-<div class="bg-black h-[350px] w-[350px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:hidden">
+<div className="bg-black h-[350px] w-[350px] scale-[60%] formatter3 rounded-full backdrop-blur-sm bg-opacity-[30%] -mb-[0px] -mt-[500px] md:hidden">
 <video src="./earth1.mp4" playsinline autoplay autoPlay defaultMuted muted loop className='invert absolute bg-black h-[350px] w-[350px] rounded-full opacity-[100%]'/>  
 </div>
 </div>
@@ -405,23 +405,23 @@ function App() {
 <video src="./test1.mp4" autoPlay muted loop className='absolute appear lg:w-1/2 bg-black rounded-2xl px-0 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-10 opacity-50 -ml-4'/>  
 <div className="appear lg:w-1/2 bg-black rounded-2xl px-12 max-w-[1200px] max-h-[800px] min-w-[370px] min-h-[800px] lg:float-left xs:scale-[88%] bg-opacity-50 -ml-4" >
   
-  <h2 className='imagine xl:text-[75px] lg:text-[30px] sm:text-[50px] xs:text-[30px] px-8 text-white '> From Imagination to Immersion, <br/> I Craft Digital Tales That Bring Ideas to Life</h2>
+  <h2 className='imagine xl:text-[75px] lg:text-[30px] sm:text-[50px] xs:text-[30px] px-8 text-white '> From Imagination to Immersion: <br/> I Craft Digital Worlds That Bring Ideas to Life</h2>
 </div>
 
 {/* mobile stuff only */}
 
 <div id='bio' className='text-left px-0 -mt-[129px] xs:-pb-[500px]'>
-<div class=" formatter3 mobile text-left w-full h-fit">
+<div className=" formatter3 mobile text-left w-full h-fit">
 <img src='./mobilehero.png' className='top-0 w-[100%] sm:aspect-video xs:aspect-square object-cover z-40'></img>
 <p className='sm:text-5xl xs:text-3xl formatter3 px-4 pt-12'> CRAFTING DIGITAL TALES</p>
   <div className='pl-0 pt-8'>
   <img src = './avatar1.png' className='w-32 h-32 rounded-full formatter3 object-contain bg-white'></img>
   </div>
-  <div class="sm:px-16 xs:px-4">
-    <h5 class="pb-6 mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased pt-20">
+  <div className="sm:px-16 xs:px-4">
+    <h5 className="pb-6 mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-[#a6acba] antialiased pt-20">
      Meet the Developer
     </h5>
-    <p class="justify-start float-left block font-sans text-base font-light leading-relaxed text-inherit antialiased sm:text-3xl xs:text-xl">
+    <p className="justify-start float-left block font-sans text-base font-light leading-relaxed text-inherit text-[#a6acba] antialiased sm:text-3xl xs:text-xl">
     Michael Musa is a freelance software 
         developer based in Houston, TX. His pursuit of user-centric design and development processes is 
         founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
@@ -431,7 +431,7 @@ function App() {
         are a visual aid to a corporation's philosophies and best practices. </span>
     </p>
   </div>
-  <div class="p-6">
+  <div className="p-6">
   </div>
   <div className='pt-6'>
   </div>
@@ -465,15 +465,15 @@ function App() {
   <div className='bg-black -mt-[40%] py-[40%] bg-opacity-[50%]'>
   <h3 className='text-center text-[20px] -mt-[10%] pb-2 text-zinc-50 opacity-[80%]'>Crafting Digital Worlds: Meet the Architect of this Online Experiences
 </h3>
-  <div className='-mt-[18%] book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[75%] max-w-[800px] min-w-[370px]'>
+  <div className='-mt-[18%] book md:scale-[60%] sm:scale-[60%] xs:scale-[60%] article rounded-2xl lg:h-[900px] md:h-[820px] sm:h-[500px] xs:h-[500px]  mx-auto md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center opacity-[85%] max-w-[800px] min-w-[370px]'>
         <div className='overflow-y-auto p-12 text-black md:h-[700px] sm:h-[500px] xs:h-[500px]'>
         <img src="./novel.png" className='scale-90 w-52 h-50 opacity-100 mb-10 rounded-3xl -mt-4'></img>
-        <p className='text-[30px] text-black'>Michael Musa is a freelance software 
+        <p className='text-[32.8px] text-black'>Michael Musa is a freelance software 
         developer based in Houston, TX. His pursuit of user-centric design and development processes is 
         founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
         as a primary landscape. 
         </p>
-        <p className='text-[30px] py-[2.5%] text-black'>
+        <p className='text-[32.8px] py-[2.5%] text-black'>
         In essence, Musa is a storyteller turned developer who strives to create compelling applications 
         and designs for corporations. Coupling his knowledge in the realm of Web Development with his 
         passion for Data Science and Sociology, Musa aims to create efficient, data-driven solutions that 
@@ -506,7 +506,7 @@ function App() {
 
 
 <div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5'>
-    <h1 id = 'projects' className='formatter1 text-5xl mt-5 text-black hover:text-[#cba787] pt-32 pb-24 universalfont'>PROJECTS</h1>
+    <h1 id = 'projects' className='formatter1 text-5xl mt-5 text-[#cba787] pt-32 pb-24 universalfont'>PROJECTS</h1>
     <div className='formatter2 flex items-center justify-center space-x-4'>
 
 
@@ -518,43 +518,43 @@ function App() {
 
 
  <div className='codebar1'>
-    <div class="relative rounded-lg bg-[#202428]">
-  <div class="relative flex text-center">
-    <div class="flex pl-3.5 pt-3"><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.5 mr-1.5 h-3 w-3 text-red-500/20">
+    <div className="relative rounded-lg bg-[#202428]">
+  <div className="relative flex text-center">
+    <div className="flex pl-3.5 pt-3"><svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.5 mr-1.5 h-3 w-3 text-red-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.75 mr-1.5 h-3 w-3 text-yellow-500/20">
+      </svg><svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.75 mr-1.5 h-3 w-3 text-yellow-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.75 mr-1.5 h-3 w-3 text-green-500/20">
+      </svg><svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.75 mr-1.5 h-3 w-3 text-green-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg></div><span class="absolute inset-x-0 top-2 text-xs text-slate-500">LifeLine.tsx</span>
+      </svg></div><span className="absolute inset-x-0 top-2 text-xs text-slate-500">LifeLine.tsx</span>
   </div>
-  <div class="mt-5 space-y-1.5 px-5 pb-10">
-    <p class="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Card</span><span class="text-slate-500">&gt;</span>
+  <div className="mt-5 space-y-1.5 px-5 pb-10">
+    <p className="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Card</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">KIDLIN LAW</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">KIDLIN LAW</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">if you write a problem down</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">if you write a problem down</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Flex</span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"clearly-and-specifically"</span></span></span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Flex</span><span className="ml-2 text-violet-400">className<span className="text-slate-500">=</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">"clearly-and-specifically"</span></span></span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">YOU</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Bold</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">have solved</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Bold</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">YOU</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Bold</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">have solved</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Metric</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">50%</span></span><span class="text-slate-500">&lt;/</span><span class="[#cba787]">Metric</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Metric</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">50%</span></span><span className="text-slate-500">&lt;/</span><span className="[#cba787]">Metric</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Flex</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Flex</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">LifeLine</span><span class="ml-2 text-violet-400">value<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">{ 50 }</span></span></span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"of-it"</span></span></span><span class="text-slate-500">/&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">LifeLine</span><span className="ml-2 text-violet-400">value<span className="text-slate-500">=</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">{ 50 }</span></span></span><span className="ml-2 text-violet-400">className<span className="text-slate-500">=</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">"of-it"</span></span></span><span className="text-slate-500">/&gt;</span>
     </p>
-    <p class="font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Card</span><span class="text-slate-500">&gt;</span>
+    <p className="font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Card</span><span className="text-slate-500">&gt;</span>
     </p>
   </div>
 </div>   
@@ -576,19 +576,19 @@ function App() {
     {/* grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-12 */} 
     {/* bg-[#ede9fe] */}
     <div className='carousel carousel-center max-w-3xl min-w-[350px] p-4 space-x-4 rounded-box bg-[#cba787] bg-opacity-[10%] sm:pr-30px'>
-    <div id="proj1" class="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:bg-opacity-95 dark:border-gray-400 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
+    <div id="proj1" className="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:bg-opacity-95 dark:border-gray-400 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
     <a href="#">
-        <img class="rounded-t-lg" src="./lcmarket.png" alt="" />
+        <img className="rounded-t-lg" src="./lcmarket.png" alt="" />
     </a>
-    <div class="p-5">
+    <div className="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white min-w-[150px]">Luther Marketplace</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white min-w-[150px]">Luther Marketplace</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
+        <p className="mb-3 font-sans sm:text-[19px] xs:[15px] text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
                                                                     goals by improving the product lifespan of items used or purchased by students</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
@@ -601,46 +601,19 @@ function App() {
     </div>
 
 
-    <div id="proj2" class="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
+    <div id="proj2" className="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
     <a href="#">
-        <img class="rounded-t-lg" src="./lcmarket.png" alt="" />
+        <img className="rounded-t-lg" src="./lcmarket.png" alt="" />
     </a>
-    <div class="p-5">
+    <div className="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
                                                                     goals by improving the product lifespan of items used or purchased by students</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-        <div className='inline-flex sm:pl-4 space-x-2 lg:text-base md:text-base sm:text-sm xs:text-xs xs:pl-2'>
-        <p className='text-[#FFD700]'>#NextJS</p>
-        <p className='text-[#009900]'>#Django</p>
-        <p className='text-[#960018]'>#REST</p>
-        </div>
-    </div>
-    </div>
-
-
-
-
-    <div id="proj3" class="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
-    <a href="#">
-        <img class="rounded-t-lg" src="./lcmarket.png" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
-                                                                    goals by improving the product lifespan of items used or purchased by students</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
@@ -655,19 +628,46 @@ function App() {
 
 
 
-    <div id="proj4" class="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
+    <div id="proj3" className="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
     <a href="#">
-        <img class="rounded-t-lg" src="./lcmarket.png" alt="" />
+        <img className="rounded-t-lg" src="./lcmarket.png" alt="" />
     </a>
-    <div class="p-5">
+    <div className="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
                                                                     goals by improving the product lifespan of items used or purchased by students</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+        <div className='inline-flex sm:pl-4 space-x-2 lg:text-base md:text-base sm:text-sm xs:text-xs xs:pl-2'>
+        <p className='text-[#FFD700]'>#NextJS</p>
+        <p className='text-[#009900]'>#Django</p>
+        <p className='text-[#960018]'>#REST</p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div id="proj4" className="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
+    <a href="#">
+        <img className="rounded-t-lg" src="./lcmarket.png" alt="" />
+    </a>
+    <div className="p-5">
+        <a href="#">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
+                                                                    goals by improving the product lifespan of items used or purchased by students</p>
+        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
@@ -683,19 +683,19 @@ function App() {
 
 
 
-    <div id="proj5" class="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
+    <div id="proj5" className="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
     <a href="#">
-        <img class="rounded-t-lg" src="./lcmarket.png" alt="" />
+        <img className="rounded-t-lg" src="./lcmarket.png" alt="" />
     </a>
-    <div class="p-5">
+    <div className="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
                                                                     goals by improving the product lifespan of items used or purchased by students</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
@@ -710,19 +710,19 @@ function App() {
 
 
 
-    <div id="proj6" class="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
+    <div id="proj6" className="max-w-sm min-w-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:scale-100 md:scale-80 sm:scale-70 xs:scale-70">
     <a href="#">
-        <img class="rounded-t-lg" src="./lcmarket.png" alt="" />
+        <img className="rounded-t-lg" src="./lcmarket.png" alt="" />
     </a>
-    <div class="p-5">
+    <div className="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Luther Marketplace</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack Web App that allows students to donate goods internally and help Luther College reach its sustainability 
                                                                     goals by improving the product lifespan of items used or purchased by students</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
@@ -744,43 +744,43 @@ function App() {
 
 
 <div className='codebar1'>
-    <div class="relative rounded-lg bg-[#202428]">
-  <div class="relative flex text-center">
-    <div class="flex pl-3.5 pt-3"><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.5 mr-1.5 h-3 w-3 text-red-500/20">
+    <div className="relative rounded-lg bg-[#202428]">
+  <div className="relative flex text-center">
+    <div className="flex pl-3.5 pt-3"><svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.5 mr-1.5 h-3 w-3 text-red-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.75 mr-1.5 h-3 w-3 text-yellow-500/20">
+      </svg><svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.75 mr-1.5 h-3 w-3 text-yellow-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg><svg viewBox="0 0 24 24" fill="currentColor" class="-ml-0.75 mr-1.5 h-3 w-3 text-green-500/20">
+      </svg><svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.75 mr-1.5 h-3 w-3 text-green-500/20">
         <circle r="12" cy="12" cx="12"></circle>
-      </svg></div><span class="absolute inset-x-0 top-2 text-xs text-slate-500">WorkEthic.tsx</span>
+      </svg></div><span className="absolute inset-x-0 top-2 text-xs text-slate-500">WorkEthic.tsx</span>
   </div>
-  <div class="mt-5 space-y-1.5 px-5 pb-10">
-    <p class="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Card</span><span class="text-slate-500">&gt;</span>
+  <div className="mt-5 space-y-1.5 px-5 pb-10">
+    <p className="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Card</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">GILBERT LAW</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">GILBERT LAW</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">if you take on a new task</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">if you take on a new task</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Flex</span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"finding-the-best-way-to"</span></span></span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Flex</span><span className="ml-2 text-violet-400">className<span className="text-slate-500">=</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">"finding-the-best-way-to"</span></span></span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="text-slate-500">&lt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">ACHIEVE</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="text-slate-500">&lt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">ACHIEVE</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">the desired result is</span></span><span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Text</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">the desired result is</span></span><span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Text</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Flex</span><span class="text-slate-500">&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Flex</span><span className="text-slate-500">&gt;</span>
     </p>
-    <p class="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;</span><span class="text-[#cba787]">WorkEthic</span><span class="ml-2 text-violet-400">value<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">{ 50 }</span></span></span><span class="ml-2 text-violet-400">className<span class="text-slate-500">=</span><span class="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span class="relative text-blue-400">"on-you"</span></span></span><span class="text-slate-500">/&gt;</span>
+    <p className="ml-3 font-mono text-xs font-normal leading-4 tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;</span><span className="text-[#cba787]">WorkEthic</span><span className="ml-2 text-violet-400">value<span className="text-slate-500">=</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">{ 50 }</span></span></span><span className="ml-2 text-violet-400">className<span className="text-slate-500">=</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"><span className="relative text-blue-400">"on-you"</span></span></span><span className="text-slate-500">/&gt;</span>
     </p>
-    <p class="font-mono text-xs font-normal tracking-wide text-violet-400">
-      <span class="text-slate-500">&lt;/</span><span class="text-[#cba787]">Card</span><span class="text-slate-500">&gt;</span>
+    <p className="font-mono text-xs font-normal tracking-wide text-violet-400">
+      <span className="text-slate-500">&lt;/</span><span className="text-[#cba787]">Card</span><span className="text-slate-500">&gt;</span>
     </p>
   </div>
 </div>   
@@ -832,11 +832,11 @@ function App() {
     iconStyle={{ background: 'rgb(0,153,0)', color: '#fff' }}
     icon={<img src={'./micodes.png'} className = "scale-[125%]" alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Freelance Software Developer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Houston, TX</h4>
-    <p>
+    <h3 className="vertical-timeline-element-title sm:text-[30px] xs:text-[23px]">Freelance Software Developer</h3>
+    <h4 className="vertical-timeline-element-subtitle text-[20px]">Houston, TX</h4>
+    <h5 className="text-[15px] mt-4">
       Utilize Typescript, Django and REST API to create inventory and listing Web Applications for IDrive and Infiniti Auto Group LLC
-    </p>
+    </h5>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -846,11 +846,11 @@ function App() {
     contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Website Developer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
-    <p>
+    <h3 className="vertical-timeline-element-title sm:text-[30px] xs:text-[23px]">Website Developer</h3>
+    <h4 className="vertical-timeline-element-subtitle text-[20px]">Decorah, IA</h4>
+    <h5 className="text-[15px] mt-4">
       Design, update and deploy Luther College`s website content using Reason CMS and WordPress with a goal to meet W3C standards for accessibility and performance.
-    </p>
+    </h5>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -860,15 +860,15 @@ function App() {
     contentArrowStyle={{ borderRight: '7px solid rgb(253,134,14)' }}
     icon={<img src={'./dc.jpeg'} alt="myLogo" className='scale-[70%]'/>} 
   >
-    <h3 className="vertical-timeline-element-title">Intranet Administrator | Website Developer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Rochester, MN</h4>
-    <p>
+    <h3 className="vertical-timeline-element-title sm:text-[30px] xs:text-[23px]">Intranet Administrator</h3>
+    <h4 className="vertical-timeline-element-subtitle text-[20px]">Rochester, MN</h4>
+    <h5 className="text-[15px] mt-4">
     Administered SharePoint sites for successful collaboration with external contractors such as Mayo Clinic and Destination
     Medical Center.
-    </p>
-    <p>
+    </h5>
+    <h5 className="text-[15px] mt-4">
     Designed and maintained static and full-stack Web Applications for Rochester community service initiatives such as Project Healings that aimed to reduce the COVID-19 vaccine disparity in the community.
-    </p>
+    </h5>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -878,14 +878,14 @@ function App() {
     contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Marketing Staff</h3>
-    <h4 className="vertical-timeline-element-subtitle">Decorah, IA</h4>
-    <p>
+    <h3 className="vertical-timeline-element-title sm:text-[30px] xs:text-[23px]">Marketing Staff</h3>
+    <h4 className="vertical-timeline-element-subtitle text-[20px]">Decorah, IA</h4>
+    <h5 className="text-[15px] mt-4">
       Developed and maintained website content using WordPress as a primary tool.
-    </p>
-    <p>
+    </h5>
+    <h5 className="text-[15px] mt-4">
       Utilized Figma for website migration planning and design outlook to visualize potential deficiencies as we shifted from Reason CMS to WordPress.
-    </p>
+    </h5>
 
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -896,10 +896,10 @@ function App() {
     contentArrowStyle={{ borderRight: '7px solid rgb(60,116,168)' }}
     icon={<img src={'./luthercollege.png'} alt="myLogo" />} 
   >
-    <h3 className="vertical-timeline-element-title">Bachelor of Arts in Computer and Data Science</h3>
-    <p>
+    <h3 className="vertical-timeline-element-title sm:text-[30px] xs:text-[23px]">Bachelor of Arts in Computer and Data Science</h3>
+    <h4 className="text-[15px] mt-4">
       Cum laude graduate majoring in Computer Science with a minor in Data Science
-    </p>
+    </h4>
   </VerticalTimelineElement>
 </VerticalTimeline>
 </div>
@@ -907,40 +907,40 @@ function App() {
 
 <div className=' waver bgsec3 pb-52'>
 <div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32 universalfont'>Get In Touch</h1></div>
-<div class="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
-  <div class="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[370px] pb-30 formatter1">
+<div className="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
+  <div className="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[370px] pb-30 formatter1">
     <div className="avatar online">
           <div className="w-24 rounded-full">
             <img src="./avatar.jpg" />
           </div>
     </div>
-    <h2 class="text-2xl font-bold text-gray-200 mb-4 universalfont">Contact Michael</h2>
+    <h2 className="text-2xl font-bold text-gray-200 mb-4 universalfont">Contact Michael</h2>
 
     <form className='pb-[100px]'>
-      <div class="flex flex-wrap formatter3">
+      <div className="flex flex-wrap formatter3">
       <input
         type="text"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
         placeholder="Full Name"
       />
       <input
         type="email"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] ml-[2%]"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] ml-[2%]"
         placeholder="Email"
       />
       <input
         type="number"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
         placeholder="Phone Number"
       />
       <input
         type="text"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] ml-[2%]"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] ml-[2%]"
         placeholder="Company Name"
       />
       <input
         type="text"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] mr-[2%]"
         placeholder="Job Title"
       />
       <input
@@ -949,12 +949,12 @@ function App() {
         name="dateInput"
         value={date}
         onChange={handleDateChange}
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] ml-[2%]"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-[48%] ml-[2%]"
         // placeholder="Date"
       />
       <textarea
         name="message"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto w-full focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest h-52"
+        className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto w-full focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest h-52"
         placeholder="Type message or click mic to Dictate"
         disabled = {isListening}
         value={isListening ? textInput + (transcript.length ? (textInput.length ? ' ' : '') + transcript : '') : textInput}
@@ -967,7 +967,7 @@ function App() {
     <p className="mt-[8px] ml-4 float-left " type="text"> {isListening ? <p className='py-2 mt-2 transition ease-in-out duration-150 animate-pulse text-red-600 text-lg'>Listening</p> : <p className='hidden'>Not Listening</p>}</p>
       <button
         type="submit"
-        class=" float-right bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+        className=" float-right bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
       >
         Send
       </button>
@@ -989,16 +989,16 @@ height='70%'
 className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 min-w-[300px] max-w-[1000px] xs:pl-[15px] xs:pt-24 md:hidden'
 frameborder="0"
 ></iframe>
-<div class="browser mt-32 relative max-h-[500px] min-h-[420px] formatter3 min-w-[700px] max-w-[700px] object-scale-down lg:scale-[100%] md:scale-[100%] sm:scale-[80%] xs:scale-[100%] mx-auto bg-[#343434] rounded-xl bg-opacity-[5%]">
-  <div class="brow flex items-center p-3">
-    <div class="px-1">
-      <span class="w-[10px] h-[10px] rounded-full inline-block bg-red-500 cursor-pointer"></span>
+<div className="browser mt-32 relative max-h-[500px] min-h-[420px] formatter3 min-w-[700px] max-w-[700px] object-scale-down lg:scale-[100%] md:scale-[100%] sm:scale-[80%] xs:scale-[100%] mx-auto bg-[#343434] rounded-xl bg-opacity-[5%]">
+  <div className="brow flex items-center p-3">
+    <div className="px-1">
+      <span className="w-[10px] h-[10px] rounded-full inline-block bg-red-500 cursor-pointer"></span>
     </div>
-    <div class="px-1">
-      <span class="w-[10px] h-[10px] rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
+    <div className="px-1">
+      <span className="w-[10px] h-[10px] rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
     </div>
-    <div class="px-1">
-      <span class="w-[10px] h-[10px] rounded-full inline-block bg-green-500 cursor-pointer"></span>
+    <div className="px-1">
+      <span className="w-[10px] h-[10px] rounded-full inline-block bg-green-500 cursor-pointer"></span>
     </div>
   </div>
       <iframe
