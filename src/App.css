@@ -706,5 +706,9 @@ h1{
 }
 
 .banner{
+  backdrop-filter: blur(20px);
+}
+
+#power{
   backdrop-filter: blur(20px) !important;
 }
