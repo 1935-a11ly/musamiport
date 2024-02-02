@@ -278,7 +278,6 @@ function App() {
   return (
     
     <>
-
       {loading && (
         <div class="container loadimage">
           <div class="loader"></div>
