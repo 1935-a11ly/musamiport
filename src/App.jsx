@@ -164,10 +164,16 @@ function App() {
         setLoading(false);
       }, 4000);
     };
-    window.addEventListener("load", handleLoad);
+
+    // Check if the document has already loaded
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
 
     return () => {
-      window.removeEventListener("load", handleLoad);
+      window.removeEventListener('load', handleLoad);
     };
   }, []);
 
@@ -544,11 +550,11 @@ function App() {
     <h5 className="pb-6 mb-2 block font-sans text-3xl font-semibold leading-snug tracking-normal text-[#a6acba] antialiased pt-20">
      Meet the Developer
     </h5>
-    <p className="justify-start float-left block font-sans text-base font-light leading-relaxed text-inherit text-[#a6acba] antialiased sm:text-3xl xs:text-xl">
+    <p className="justify-start float-left block font-sans leading-relaxed text-[#a6acba] antialiased sm:text-3xl xs:text-xl">
     Michael Musa is a freelance software 
         developer based in Houston, TX. His pursuit of user-centric design and development processes is 
         founded on co-design principles and aims to explore cultural relativism with the World Wide Web 
-        as a primary landscape.  <span className='block mt-6'>In essence, Musa is a storyteller turned developer who strives to create compelling applications 
+        as a primary landscape.  <span className='block mt-6 text-[#a6acba]'>In essence, Musa is a storyteller turned developer who strives to create compelling applications 
         and designs for corporations. Coupling his knowledge in the realm of Web Development with his 
         passion for Data Science and Sociology, Musa aims to create efficient, data-driven solutions that 
         are a visual aid to a corporation's philosophies and best practices. </span>
