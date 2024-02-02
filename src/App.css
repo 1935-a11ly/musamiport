@@ -704,3 +704,7 @@ h1{
     opacity: 1;
   }
 }
+
+.banner{
+  backdrop-filter: blur(20px) !important;
+}
