@@ -75,24 +75,24 @@ html, body {
 stroke-dasharray: 1850 2000;
 stroke-dashoffset: 1851;
 transition: 3.5s linear;
-transition-delay: 1s;
+transition-delay: 5s;
 }
 .path-2 {
 stroke-dasharray: 260 1000;
 stroke-dashoffset: 261;
 transition: 1.2s linear 3.7s;
-transition-delay: 4.7s;
+transition-delay: 8.7s;
 }
 .path-3 {
 stroke-dasharray: 100 1000;
 stroke-dashoffset: 101;
 transition: 1s linear 5.0s;
-transition-delay: 6s;
+transition-delay: 10s;
 }
 .path-4 {
 stroke-width: 0;
 transition: 0.1s linear 5.0s;
-transition-delay: 6s;
+transition-delay: 10s;
 }
 
 .d1image {
@@ -603,3 +603,102 @@ h1{
     border-radius: 10px;
   }
 }
+
+
+#pur {
+  opacity: 0;
+  animation: operator 4s ease-in-out 10s both;
+}
+
+@keyframes operator {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#pur2 {
+  opacity: 0;
+  animation: operator 4s ease-in-out 10s both;
+}
+
+@keyframes operator {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#tops {
+  opacity: 0;
+}
+
+#tops.fadeInAnimation {
+  animation: easydoesit 1.5s ease-in-out both;
+}
+
+@keyframes easydoesit {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#fadeproj {
+  opacity: 0;
+}
+
+#fadeproj.fadeInAnimation {
+  animation: intro 1.3s ease-in-out both;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#gtouch {
+  opacity: 0;
+}
+
+#gtouch.fadeInAnimation {
+  animation: intro 1.5s ease-in-out both;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#aismooth {
+  opacity: 0;
+}
+
+#aismooth.fadeInAnimation {
+  animation: intro 1.5s ease-in-out both;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

@@ -156,32 +156,114 @@ function App() {
     setIsNavOpen((prev) => !prev);
   };
 
-  const purgeElements = ['blr', 'tops', 'vanta', 'burgerr'];
-
-  const purge = () => {
-    purgeElements.forEach((purgeId) => {
-      const removee = document.getElementById(purgeId);
-      removee.style.display = 'none';
-        setTimeout(() => {
-          removee.style.display = 'block';
-        }, 5000); // 5000 milliseconds (5 seconds) delay before changing to 'block'
-    });
-  };
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleLoad = () => {
-      purge();
       setTimeout(() => {
         setLoading(false);
-      }, 5000);
+      }, 4000);
     };
-
     window.addEventListener("load", handleLoad);
 
     return () => {
       window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  const purRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const purElement = purRef.current;
+
+      if (purElement) {
+        const purTop = purElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (purTop < windowHeight * 0.75) {
+          // If the top of the "pur" element is within 75% of the viewport height
+          purElement.classList.add('fadeInAnimation');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const topsRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const purElement = topsRef.current;
+
+      if (purElement) {
+        const purTop = purElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (purTop < windowHeight * 0.75) {
+          // If the top of the "pur" element is within 75% of the viewport height
+          purElement.classList.add('fadeInAnimation');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const touchRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const purElement = touchRef.current;
+
+      if (purElement) {
+        const purTop = purElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (purTop < windowHeight * 0.75) {
+          // If the top of the "pur" element is within 75% of the viewport height
+          purElement.classList.add('fadeInAnimation');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const aiRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const purElement = aiRef.current;
+
+      if (purElement) {
+        const purTop = purElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (purTop < windowHeight * 0.75) {
+          // If the top of the "pur" element is within 75% of the viewport height
+          purElement.classList.add('fadeInAnimation');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -198,12 +280,12 @@ function App() {
         </div>
       )}
     
-    <div id='pur' className='purge'>
+    <div id='' className=''>
     <div className='d1image'>
     <div className='formatter1'>
     <div>
 
-  <div className="formatter3 scale-[94%] md:block sm:hidden xs:hidden">
+  <div id = 'pur2' className="formatter3 scale-[94%] md:block sm:hidden xs:hidden">
     <div className='formatter3 bg-black bg-opacity-[55%] p-[10px] rounded-2xl max-w-[590px] min-w-[350px] h-[56px]'>
     <a href='#about'>
     <button className='tab text-[15px] text-white opacity-[80%]'>
@@ -332,6 +414,7 @@ function App() {
 </span></div>
     </div>
 
+<div id='pur' className=''>
 <div className='text-[#303030] invert opacity-[70%] xs:pb-10 sm:pb-10 md:pb-17 pt-4 xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
 
 <div className='pb-8 px-0 text-xl md:flex md:justify-center space-x-4'>
@@ -399,6 +482,7 @@ function App() {
 </div>
 </div>
     </div>
+    </div>
     
 
 
@@ -415,7 +499,7 @@ function App() {
 
 {/* removed major className to tops it had backdrop */}
 
-<div id='tops' className='major lg:h-[1650px] md:h-[1650px] sm:h-[1650px] xs:h-[1410px] bg-[#dbe3e4]'>
+<div id='tops' ref={purRef} className='major lg:h-[1650px] md:h-[1650px] sm:h-[1650px] xs:h-[1410px] bg-[#dbe3e4]'>
 <div className='mob1 pt-0 -pb-[25%] '>
 <h4 className="formatter3 pt-32">
     <span className='craft z-0 text-white drop-shadow-2xl antialiased opacity-[80%]'>CRAFTING </span><span className=''><img src= './digital.png' alt= "Image Description" className='invert -mt-[15%] scale-[60%]'/></span>
@@ -545,6 +629,7 @@ function App() {
 
 
 <div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5 w-full h-full'>
+    <div id='fadeproj' ref={topsRef}>
     <h1 id = 'projects' className='formatter1 text-5xl mt-5 text-[#cba787] pt-32 pb-24 universalfont'>PROJECTS</h1>
     <div className='formatter2 flex items-center justify-center space-x-4'>
 
@@ -854,7 +939,7 @@ function App() {
 </div>
 
 
-
+</div>
 
 
 
@@ -945,7 +1030,8 @@ function App() {
 
 
 <div className=' waver bgsec3 pb-52'>
-<div id = 'contact' className='formatter3 xs:text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl text-white'><h1 className='pt-32 universalfont'>Get In Touch</h1></div>
+<div id = 'gtouch' ref={touchRef}>
+<div id = 'contact' className='formatter3 xs:text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl text-white'><h1 className='pt-36 universalfont pb-12'>GET IN TOUCH</h1></div>
 <div className="flex flex-col items-center justify-center min-h-[250px] dark mt-20">
   <div className="w-full bg-gray-800 rounded-3xl bg-opacity-[63%] backdrop-blur-sm shadow-md pt-14 lg:w-[950px] md:w-[650px] sm:w-[550px] xs:w-[370px] pb-30 formatter1">
     <div className="avatar online">
@@ -1014,8 +1100,9 @@ function App() {
   </div>
 </div>
 </div>
+</div>
 
-<div className='backdropp bg-black pt-24 pb-16 lg:px-0'>
+<div id='aismooth' ref={aiRef} className='backdropp bg-black pt-24 pb-16 lg:px-0'>
 <div className="spinner w-12 h-12 formatter3">
   <div className="spinner1 w-12 h-12"></div>
 </div>
