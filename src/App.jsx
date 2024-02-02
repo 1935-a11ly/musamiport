@@ -170,10 +170,12 @@ function App() {
       handleLoad();
     } else {
       window.addEventListener('load', handleLoad);
+      document.addEventListener('DOMContentLoaded', handleLoad);
     }
 
     return () => {
       window.removeEventListener('load', handleLoad);
+      document.removeEventListener('DOMContentLoaded', handleLoad);
     };
   }, []);
 
