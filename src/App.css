@@ -474,6 +474,10 @@ h1{
   .hamburger {
     display: none !important;
   }
+  #pur {
+    opacity: 0;
+    animation: operator 4s ease-in-out 5s both 1;
+  }
 }
 
 @media screen and (max-width: 1144px) and (min-width: 658px) {
@@ -607,7 +611,7 @@ h1{
 
 #pur {
   opacity: 0;
-  animation: operator 4s ease-in-out 10s both;
+  animation: operator 4s ease-in-out 5s both 1;
 }
 
 @keyframes operator {
@@ -620,7 +624,7 @@ h1{
 }
 #pur2 {
   opacity: 0;
-  animation: operator 4s ease-in-out 10s both;
+  animation: operator 4s ease-in-out 5s both 1;
 }
 
 @keyframes operator {
