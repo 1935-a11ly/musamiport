@@ -156,11 +156,49 @@ function App() {
     setIsNavOpen((prev) => !prev);
   };
 
+  const purgeElements = ['blr', 'tops', 'vanta', 'burgerr'];
+
+  const purge = () => {
+    purgeElements.forEach((purgeId) => {
+      const removee = document.getElementById(purgeId);
+      removee.style.display = 'none';
+        setTimeout(() => {
+          removee.style.display = 'block';
+        }, 5000); // 5000 milliseconds (5 seconds) delay before changing to 'block'
+    });
+  };
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      purge();
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
   return (
     
     <>
 
-    <div id='pur' className='cursor-fancy'>
+      {loading && (
+        <div class="container loadimage">
+          <div class="loader"></div>
+          <div class="loader"></div>
+          <div class="loader"></div>
+          <div className='-ml-[70px] -mt-[50px] top-[40%] left-[50%] formatter3 absolute font-sans text-[30px] z-50 object-center animate-pulse'>LOADING</div>
+        </div>
+      )}
+    
+    <div id='pur' className='purge'>
     <div className='d1image'>
     <div className='formatter1'>
     <div>
@@ -506,7 +544,7 @@ function App() {
 
 
 
-<div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5'>
+<div id="vanta" className='xl:h-[1400px] lg:h-[1380px] md:h-[1280px] sm:h-[1200px] xs:h-[1200px] -mt-5 w-full h-full'>
     <h1 id = 'projects' className='formatter1 text-5xl mt-5 text-[#cba787] pt-32 pb-24 universalfont'>PROJECTS</h1>
     <div className='formatter2 flex items-center justify-center space-x-4'>
 
