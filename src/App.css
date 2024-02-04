@@ -672,3 +672,58 @@ h1{
   }
 }
 
+#aismooth.fadeInAnimation {
+  animation: intro 1.5s ease-in-out both;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#aismooth.fadeInAnimation {
+  animation: intro 1.5s ease-in-out both;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#banner {
+  backdrop-filter: blur(0px);
+  animation: operator 4s ease-in-out 10s both 1;
+}
+
+@keyframes operator {
+  from {
+    backdrop-filter: blur(0px);
+  }
+  to {
+    backdrop-filter: blur(20px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .imgbanner {
+    backdrop-filter: blur(0px);
+    animation: operator 4s ease-in-out 10s both 1;
+  }
+  
+  @keyframes operator {
+    from {
+      backdrop-filter: blur(0px);
+    }
+    to {
+      backdrop-filter: blur(20px);
+    }
+  }
+}

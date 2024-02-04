@@ -477,7 +477,7 @@ function App() {
 <div className='py-10 sm:px-4 xs:px-0 text-3xl scroll-smooth'>
 
   <div className='items-center'>
-    <div className='imageblur xl:bg-gray-950 xl:backdrop-blur-lg xl:bg-opacity-[50%] rounded-3xl w-fit xl:float-left'>
+    <div className='imgbanner xl:bg-gray-950 xl:bg-opacity-[50%] rounded-3xl w-fit xl:float-left'>
       <img
         src={imageSources[currentImageIndex]} // Replace with the actual image source
         alt="Image Description"
@@ -489,7 +489,7 @@ function App() {
         }}
       />
     </div>
-    <div id = 'banner' className='sm:p-8 xs:p-8 md:p-[28px] bg-gray-950 text-[20px] text-white font-sans max-w-4xl min-w-[310px] text-left xl:float-right bg-gray-950 rounded-3xl bg-opacity-[55%] backdrop-blur-lg'>
+    <div id = 'banner' className='sm:p-8 xs:p-8 md:p-[28px] bg-gray-950 text-[20px] text-white font-sans max-w-4xl min-w-[310px] text-left xl:float-right bg-gray-950 rounded-3xl bg-opacity-[55%]'>
     I am a passionate frontend developer and dedicated software engineer, 
     always excited to embark on new coding adventures. <span className='lg:inline md:hidden sm:hidden xs:hidden'>I enjoy translating creative ideas into pixel-perfect, interactive web applications, 
     continuously learning and growing to stay at the forefront of technology. <span className='text-green-500 ml-4 mr-4'>#talksaboutWebDev</span> <span className='text-red-600 mr-4'>#talksaboutPhotography</span> <span className='text-yellow-300'>#talksaboutPoetry</span></span>
