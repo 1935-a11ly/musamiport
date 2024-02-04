@@ -163,7 +163,7 @@ function App() {
     const handleLoad = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 4000);
+      }, 3000);
     };
 
     // Check if the document has already loaded
