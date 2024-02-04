@@ -284,7 +284,7 @@ function App() {
           <div class="loader"></div>
           <div class="loader"></div>
           <div class="loader"></div>
-          <div className='-ml-[70px] -mt-[50px] top-[40%] left-[50%] formatter3 absolute font-sans text-[30px] z-50 object-center animate-pulse'>LOADING</div>
+          <div className='-ml-[70px] -mt-[50px] top-[40%] left-[50%] formatter3 absolute font-sans text-[30px] z-50 text-white opacity-[80%] object-center animate-pulse'>LOADING</div>
         </div>
       )}
     
