@@ -1158,7 +1158,7 @@ frameborder="0"
 <div className='backdrop1'>
 </div>
 
-<div className="slider bg-transparent lg:block md:hidden sm:hidden xs:hidden w-full pt-32">
+<div className="slider bg-transparent lg:block md:hidden sm:hidden xs:hidden w-full pt-32 antialiased">
 	<div className="slide-track bg-transparent">
 		<div className="slide">
       <h1 className='craft2 text-[50px] text-[#dddddf] h-[70px] w-[650px]'> YEARS OF EXPERIENCE</h1>
@@ -1185,7 +1185,7 @@ frameborder="0"
 
 
 
-<div className="slider2 bg-transparent w-full lg:block md:hidden sm:hidden xs:hidden">
+<div className="slider2 bg-transparent w-full lg:block md:hidden sm:hidden xs:hidden antialiased">
 	<div className="slide-track2 bg-transparent">
 		<div className="slide2">
       <div className="border-[1px] border-[#dddddf] w-72 h-[120px] flex flex-col justify-center gap-2 bg-transparent rounded-full p-2 backdrop-blur-sm ">
