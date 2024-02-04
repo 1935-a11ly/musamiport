@@ -6,6 +6,7 @@ import RINGS from 'vanta/src/vanta.rings'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import useSpeechToText from './test.jsx';
+import { motion } from 'framer-motion';
 
 
 
@@ -291,9 +292,14 @@ function App() {
     <div className='d1image'>
     <div className='formatter1'>
     <div>
-
+  
+    <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 3, delay: 7 }}
+  >
   <div id = 'pur2' className="formatter3 scale-[94%] md:block sm:hidden xs:hidden">
-    <div className='formatter3 bg-black bg-opacity-[55%] p-[10px] rounded-2xl max-w-[590px] min-w-[350px] h-[56px]'>
+    <div className='formatter3 bg-black bg-opacity-[45%] backdrop-blur-sm p-[10px] rounded-2xl max-w-[590px] min-w-[350px] h-[56px]'>
     <a href='#about'>
     <button className='tab text-[15px] text-white opacity-[80%]'>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 pr-2">
@@ -351,6 +357,7 @@ function App() {
     </a>
     </div>
 </div>
+</motion.div>
 
 
 <div className="hamburger min-w-full flex items-center justify-between py-8 -mt-4">
@@ -421,6 +428,11 @@ function App() {
 </span></div>
     </div>
 
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 3, delay: 7 }}
+>
 <div id='pur' className=''>
 <div className='text-[#303030] invert opacity-[70%] xs:pb-10 sm:pb-10 md:pb-17 pt-4 xs:text-[1.5rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[2.6rem]'>{displayText}</div>
 
@@ -463,8 +475,9 @@ function App() {
 </div>
 </div>
 <div className='py-10 sm:px-4 xs:px-0 text-3xl scroll-smooth'>
+
   <div className='items-center'>
-    <div className='xl:bg-black xl:bg-opacity-[55%] xl:backdrop-blur-xl rounded-3xl w-fit xl:float-left'>
+    <div className='imageblur xl:bg-gray-950 xl:backdrop-blur-lg xl:bg-opacity-[50%] rounded-3xl w-fit xl:float-left'>
       <img
         src={imageSources[currentImageIndex]} // Replace with the actual image source
         alt="Image Description"
@@ -476,18 +489,15 @@ function App() {
         }}
       />
     </div>
-    <div id='power'>
-    <div className='banner sm:p-8 xs:p-8 md:text-xl sm:text-base xs:text-base text-white font-sans max-w-4xl min-w-[310px] text-left xl:float-right bg-black rounded-3xl bg-opacity-[55%] backdrop-blur-xl'>
+    <div id = 'banner' className='sm:p-8 xs:p-8 md:p-[28px] bg-gray-950 text-[20px] text-white font-sans max-w-4xl min-w-[310px] text-left xl:float-right bg-gray-950 rounded-3xl bg-opacity-[55%] backdrop-blur-lg'>
     I am a passionate frontend developer and dedicated software engineer, 
-    always excited to embark on new coding adventures. 
-    <span className='lg:inline md:hidden sm:hidden xs:hidden font-sans'>With a keen eye for user-centric design and a love for crafting elegant, efficient solutions,
-    I thrive in the dynamic world of web development.</span> I enjoy translating creative ideas into pixel-perfect, interactive web applications, 
-    continuously learning and growing to stay at the forefront of technology.
-    </div>
+    always excited to embark on new coding adventures. <span className='lg:inline md:hidden sm:hidden xs:hidden'>I enjoy translating creative ideas into pixel-perfect, interactive web applications, 
+    continuously learning and growing to stay at the forefront of technology. <span className='text-green-500 ml-4 mr-4'>#talksaboutWebDev</span> <span className='text-red-600 mr-4'>#talksaboutPhotography</span> <span className='text-yellow-300'>#talksaboutPoetry</span></span>
     </div>
   </div>
 </div>
 </div>
+</motion.div>
 </div>
 </div>
     </div>

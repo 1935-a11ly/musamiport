@@ -474,10 +474,6 @@ h1{
   .hamburger {
     display: none !important;
   }
-  #pur {
-    opacity: 0;
-    animation: operator 4s ease-in-out 5s both 1;
-  }
 }
 
 @media screen and (max-width: 1144px) and (min-width: 658px) {
@@ -608,35 +604,6 @@ h1{
   }
 }
 
-
-#pur {
-  opacity: 0;
-  animation: operator 4s ease-in-out 5s both 1;
-}
-
-@keyframes operator {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#pur2 {
-  opacity: 0;
-  animation: operator 4s ease-in-out 5s both 1;
-}
-
-@keyframes operator {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
 #tops {
   opacity: 0;
 }
@@ -705,10 +672,3 @@ h1{
   }
 }
 
-.banner{
-  backdrop-filter: blur(20px);
-}
-
-#power{
-  backdrop-filter: blur(20px) !important;
-}
