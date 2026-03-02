@@ -1128,7 +1128,7 @@ function App() {
 <h1 id = 'ai' className='formatter3 text-5xl pt-4 text-white pt-8 universalfont'>MUS.AI</h1>
 <h1 className='formatter3 text-3xl mt-10 mb-8 italic xs:hidden md:block text-white'>"How my journey takes shape."</h1>
 <iframe
-src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
+src="https://www.chatbase.co/chatbot-iframe/VNP2aflF4zqbNGR3C54Wj"
 width="50%"
 height='70%'
 className='framee max-h-[800px] min-h-[787px] formatter3 lg:pt-28 mt-[25px] pb-20 min-w-[300px] max-w-[1000px] xs:pl-[15px] xs:pt-24 md:hidden'
