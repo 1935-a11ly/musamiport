@@ -1146,8 +1146,8 @@ frameborder="0"
       <span className="w-[10px] h-[10px] rounded-full inline-block bg-green-500 cursor-pointer"></span>
     </div>
   </div>
-      <iframe
-    src="https://www.chatbase.co/chatbot-iframe/PSmPZQ8je3ifqFsQFT1Lp"
+    <iframe
+    src="https://www.chatbase.co/chatbot-iframe/VNP2aflF4zqbNGR3C54Wj"
     width="50%"
     height='70%'
     className='frame2 -mt-[5px] rounded-xl relative max-h-[340px] min-h-[340px] formatter3 min-w-[650px] max-w-[650px] object-scale-down lg:scale-[100%] md:scale-[100%] sm:scale-[95%]'
